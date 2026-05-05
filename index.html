@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Philosophy</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        const isMobile = window.innerWidth <= 834;
+        const file = isMobile ? "mobile.html" : "desktop.html";
+
+        fetch(file)
+            .then(res => {
+                if (!res.ok) throw new Error("File not found");
+                return res.text();
+            })
+            .then(data => {
+                document.getElementById("app").innerHTML = data;
+                // Re-initialize scripts after content loads
+                if (typeof applyTranslations !== 'undefined') {
+                    const saved = localStorage.getItem('lang');
+                    applyTranslations(saved === 'de' ? 'de' : 'en');
+                }
+                if (typeof initializeLanguageSelector !== 'undefined') {
+                    initializeLanguageSelector();
+                }
+                if (typeof createOrbitAnimation !== 'undefined') {
+                    // Re-init orbit animations
+                    createOrbitAnimation({
+                        path1Id: "orbitPath1",
+                        path2Id: "orbitPath2",
+                        ball1Id: "ball1",
+                        ball2Id: "ball2",
+                        cacheKey: "orbitBoundsHero",
+                    });
+                    createOrbitAnimation({
+                        path1Id: "orbitPath1Center",
+                        path2Id: "orbitPath2Center",
+                        ball1Id: "ball1Center",
+                        ball2Id: "ball2Center",
+                        cacheKey: "orbitBoundsCenter",
+                    });
+                    createOrbitAnimation({
+                        path1Id: "orbitPath1About",
+                        path2Id: "orbitPath2About",
+                        ball1Id: "ball1About",
+                        ball2Id: "ball2About",
+                        cacheKey: "orbitBoundsAbout",
+                    });
+                }
+                if (typeof initCurveBall !== 'undefined') {
+                    initCurveBall();
+                }
+                if (typeof initCurveBallMobile !== 'undefined') {
+                    initCurveBallMobile();
+                }
+                // Load header script after header element exists
+                const headerScript = document.createElement('script');
+                headerScript.src = './js/header.js';
+                document.body.appendChild(headerScript);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById("app").innerHTML = "Error loading content";
+            });
+    </script>
+    <script src="./js/i18n.js"></script>
+    <script src="./js/orbit.js"></script>
+</body>
+
+</html>
