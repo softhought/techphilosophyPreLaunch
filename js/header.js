@@ -6,7 +6,6 @@ const menuIcon = document.getElementById("menuIcon");
 const header = document.getElementById("header");
 
 function toggleMenu() {
-  if (!navmenu || !menuIcon) return;
   mobileOpen = !mobileOpen;
 
   if (mobileOpen) {
@@ -21,7 +20,6 @@ function toggleMenu() {
 }
 
 function handleNavClick() {
-  if (!navmenu || !menuIcon) return;
   if (mobileOpen) {
     toggleMenu();
   }
@@ -29,7 +27,6 @@ function handleNavClick() {
 
 /* SCROLL EFFECT */
 window.addEventListener("scroll", () => {
-  if (!header) return;
   if (window.scrollY > 100) {
     header.classList.add("scrolled");
   } else {

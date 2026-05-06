@@ -2,7 +2,7 @@ const translations = {
   en: {
     hero_top_text: "Our full website is launching soon — but we're already here for early conversations.",
     hero_title: "Tech Philosophy:",
-    hero_title_2: "Digital clarity <br />for your <br /> business",
+    hero_title_2: "Digital clarity <br />for your business",
     hero_description: "We help businesses turn scattered tools, manual work, and technical uncertainty into practical digital solutions that support day-to-day operations.",
     hero_email: "hello@techphistudio.de",
     hero_button: "Drop us an email",
@@ -27,12 +27,12 @@ const translations = {
     project_header_1: "Have a project",
     project_header_2: "in mind?",
     contact_header: "Drop us an email",
-    contact_location: "Cologne, Germany",
+    contact_location: "Köln, Germany",
   },
   de: {
     hero_top_text: "Unsere vollstaendige Website startet in Kuerze – fuer ein erstes Gespraech stehen wir Ihnen jedoch bereits heute gerne zur Verfuegung",
     hero_title: "Tech Philosophy:",
-    hero_title_2: "Digitale Klarheit <br />für Ihr <br /> Unternehmen",
+    hero_title_2: "Digitale Klarheit <br />für Ihr Unternehmen",
     hero_description: "Wir unterstützen Unternehmen dabei, eine Vielzahl unübersichtlicher Tools, manuelle Arbeitsschritte und technische Unsicherheiten in praktische digitale Lösungen zu verwandeln, die den Geschäftsalltag erleichtern.",
     hero_email: "hello@techphistudio.de",
     hero_button: "Schreiben Sie uns",
@@ -83,20 +83,10 @@ function applyTranslations(lang) {
   localStorage.setItem('lang', lang);
 }
 
-let languageSelectorInitialized = false;
-
-function initializeLanguageSelector() {
-  if (languageSelectorInitialized) return;
-  document.addEventListener('click', event => {
-    const target = event.target.closest('.language-option');
-    if (!target) return;
-    applyTranslations(target.dataset.lang);
-  });
-  languageSelectorInitialized = true;
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  initializeLanguageSelector();
+  document.querySelectorAll('.language-option').forEach(el => {
+    el.addEventListener('click', () => applyTranslations(el.dataset.lang));
+  });
 
   const saved = localStorage.getItem('lang');
   applyTranslations(saved === 'de' ? 'de' : 'en');

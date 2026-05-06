@@ -205,42 +205,6 @@ function initCurveBall() {
   animate();
 }
 
-function initCurveBallMobile() {
-  const path = document.getElementById("curveTopMobile");
-  const ball = document.getElementById("movingBallMobile");
-
-  if (!path || !ball) return;
-
-  const length = path.getTotalLength();
-  let t = 0;
-
-  function animate() {
-    const current = path.getPointAtLength(t);
-    const next = path.getPointAtLength((t + 1) % length);
-
-    const dx = next.x - current.x;
-    const dy = next.y - current.y;
-
-    const mag = Math.hypot(dx, dy);
-    const nx = -dy / mag;
-    const ny = dx / mag;
-
-    const offset = 5.5;
-
-    const x = current.x + nx * offset;
-    const y = current.y + ny * offset;
-
-    ball.setAttribute("transform", `translate(${x}, ${y})`);
-
-    t += 1.5;
-    if (t > length) t = 0;
-
-    requestAnimationFrame(animate);
-  }
-
-  animate();
-}
-
 window.addEventListener("DOMContentLoaded", () => {
   createOrbitAnimation({
     path1Id: "orbitPath1",

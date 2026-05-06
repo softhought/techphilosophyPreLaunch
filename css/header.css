@@ -74,15 +74,8 @@
 }
 
 /* MOBILE */
-@media (min-width: 300px) and (max-width: 834px) {
+@media (max-width: 992px) {
   .header-container {
-    padding: 19px 16px;
-    max-width: 834px;
-    margin: auto;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 16px;
   }
 }
