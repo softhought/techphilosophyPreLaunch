@@ -140,10 +140,12 @@ body {
   right: 60px;
 }
 
-.hero-content {
-  position: absolute;
-  top: 228px;
-  left: 60px;
+.hero-content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 250px;
 }
 
 .hero-title {
@@ -167,7 +169,6 @@ body {
   line-height: 100%;
   letter-spacing: -2.4px;
   margin: 0;
-  width: 958px;
 }
 
 .hero-description {
@@ -220,19 +221,24 @@ body {
   letter-spacing: -0.32px;
 }
 
+.hero-orbit-wrapper {
+  position: relative;
+  width: 60%;
+}
+
 .hero-orbit {
-  width: 1014px;
-  height: 428.253px;
-  transform: rotate(15.683deg);
+  width: 140%;
+  height: fit-content;
+  transform: rotate(11.683deg);
   position: absolute;
-  top: 210px;
-  left: 610px;
+  top: 0;
 }
 
 .hero-image {
   position: absolute;
-  top: 140px;
-  right: 126px;
+  top: -130px;
+  left: 200px;
+  width: 450px;
 }
 
 /* Middle Header Section */
@@ -250,7 +256,7 @@ body {
 .middle-header-1 {
   text-align: right;
   font-family: "Ivar Text", serif;
-  font-size: 120px;
+  font-size: 110px;
   font-style: italic;
   font-weight: 400;
   line-height: 100%;
@@ -288,259 +294,280 @@ body {
 .curve-vector-container {
   position: relative;
   box-sizing: border-box;
-  position: relative;
   z-index: 1;
-  margin-top: 192px;
+  margin-top: clamp(60px, 14vw, 192px);
   width: 100%;
-  height: 300px;
+  height: clamp(200px, 22vw, 300px);
 }
 
 .curve-text-container {
   display: flex;
-  width: 445px;
+  width: clamp(260px, 33vw, 445px);
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
+  gap: clamp(16px, 3vw, 40px);
   position: absolute;
-  top: -80px;
-  right: 270px;
+  top: clamp(-40px, -6vw, -80px);
+  right: clamp(20px, 16vw, 270px);
 }
 
 .curve-text {
   color: #4b4d51;
   text-align: justify;
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  font-size: clamp(13px, 1.15vw, 16px);
   font-weight: 400;
   line-height: 140%;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
 .curve-company-name {
   color: #4b4d51;
-  text-align: justify;
   font-family: "Ivar Text", serif;
-  font-size: 26px;
+  font-size: clamp(18px, 2vw, 26px);
   font-style: italic;
   font-weight: 400;
   line-height: 116%;
-  letter-spacing: -0.78px;
+  letter-spacing: -0.03em;
 }
 
 .curve-highlight {
   color: #4b4d51;
-  text-align: justify;
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  font-size: clamp(13px, 1.15vw, 16px);
   font-weight: 500;
   line-height: 140%;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.02em;
 }
 
 .curve-image-container {
-  width: 195.494px;
-  height: 204px;
   position: absolute;
-  top: 20px;
-  left: 400px;
+
+  /* anchor point */
+  left: 30%;
+  top: 50%;
+
+  /* keeps center locked */
+  transform: translate(-50%, -50%);
+
+  width: clamp(100px, 14.5vw, 195px);
+  aspect-ratio: 195 / 204;
+
+  z-index: 2;
 }
 
 .curve-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .curve-image-2 {
   position: absolute;
-  width: 59.246px;
-  height: 52.889px;
-  top: 5.2rem;
-  left: 4.2rem;
+  width: 30%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+@media (max-width: 1150px) {
+  .curve-image-container {
+    top: 60%;
+  }
+}
+
+@media (max-width: 990px) {
+  .curve-image-container {
+    top: 65%;
+  }
 }
 
 /* Central Vector */
 
 .central-vector-container {
   position: relative;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 1;
-  margin-top: 192px;
   width: 100%;
-  height: 687px;
+  max-width: 1320px;
+  padding-top: clamp(360px, 52vw, 687px);
+  margin-top: clamp(60px, 14vw, 192px);
 }
 
 .central-vector {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   transform: scaleY(-1) rotate(10deg);
   transform-origin: center;
 }
 
+.central-vector svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .central-vector-text {
   display: inline-flex;
-  padding: 20px 50px;
+  padding: clamp(10px, 1.5vw, 20px) clamp(18px, 3.8vw, 50px);
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.20);
   background: rgba(255, 255, 255, 0.20);
   backdrop-filter: blur(15px);
-
   color: #23252A;
   font-family: "Satoshi", sans-serif;
-  font-size: 26px;
-  font-style: normal;
+  font-size: clamp(14px, 2vw, 26px);
   font-weight: 500;
   line-height: 116%;
-  letter-spacing: -0.52px;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 2;
 }
 
 .central-vector-span-text {
   color: #23252A;
   font-family: "Ivar Text", serif;
-  font-size: 26px;
+  font-size: clamp(14px, 2vw, 26px);
   font-style: italic;
   font-weight: 400;
   line-height: 116%;
-  letter-spacing: -0.78px;
+  letter-spacing: -0.03em;
 }
 
 .vector-ellipse {
-  width: 14px;
-  height: 14px;
+  width: clamp(8px, 1.1vw, 14px);
+  height: clamp(8px, 1.1vw, 14px);
   background: #F60;
-  stroke-width: 1px;
-  stroke: rgba(255, 255, 255, 0.13);
   box-shadow: 0 4px 3.5px 0 rgba(255, 255, 255, 0.25) inset;
   filter: drop-shadow(0 9px 18.4px #EBA87B) drop-shadow(0 4px 4px rgba(255, 102, 0, 0.49));
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .text-1 {
-  position: absolute;
-  top: 100px;
-  left: 112px;
+  top: 27.5%;
+  left: 5.5%;
 }
 
 .text-2 {
-  position: absolute;
-  top: 357px;
-  right: 150px;
+  top: 64.8%;
+  right: 9.4%;
 }
 
 .central-vector-main-text {
   display: flex;
-  width: 550px;
+  width: clamp(220px, 41.7vw, 550px);
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   gap: 8px;
-  height: 104px;
-
-  align-self: stretch;
-
   color: #23252A;
   text-align: right;
   font-family: "Satoshi", sans-serif;
-  font-size: 48px;
-  font-style: normal;
+  font-size: clamp(24px, 3.6vw, 48px);
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: -0.96px;
-
+  letter-spacing: -0.02em;
   position: absolute;
-  left: 445px;
-  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 45%;
+  z-index: 2;
 }
 
 .central-vector-main-span-text {
   color: #23252A;
   text-align: right;
   font-family: "Ivar Text", serif;
-  font-size: 48px;
+  font-size: clamp(24px, 3.6vw, 48px);
   font-style: italic;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: -1.44px;
+  letter-spacing: -0.03em;
 }
+
+/* what we help container  */
 
 .what-we-help-container {
   position: relative;
   box-sizing: border-box;
-  position: relative;
   z-index: 1;
   width: 100%;
-  height: 1049px;
-  padding: 0px 60px;
+  height: auto;
+  min-height: clamp(600px, 80vw, 1049px);
+  padding: 0 clamp(16px, 4.5vw, 60px);
 }
 
 .what-we-help-container-upper-text {
-  width: 445px;
-  height: 216px;
+  width: clamp(260px, 33vw, 445px);
+  height: auto;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
-
+  gap: clamp(16px, 3vw, 40px);
   position: absolute;
   top: 0;
-  right: 270px;
+  right: clamp(20px, 20vw, 270px);
 }
 
 .what-we-help-container-upper-text p {
   color: #4B4D51;
   text-align: justify;
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  font-size: clamp(13px, 1.15vw, 16px);
   font-weight: 400;
   line-height: 140%;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.02em;
   margin: 0;
-}
-
-.our-technologies {
-  width: 601.02px;
-  height: 191.209px;
-  position: relative;
 }
 
 .what-we-help-bottom-container {
   position: absolute;
-  bottom: 250px;
-  width: 1320px;
+  bottom: clamp(60px, 18vw, 250px);
+  width: calc(100% - clamp(32px, 9vw, 120px));
+  max-width: 1320px;
 }
 
 .what-we-help-header {
   color: #23252A;
   font-family: "Satoshi", sans-serif;
-  font-size: 68px;
-  font-style: normal;
+  font-size: clamp(36px, 5.2vw, 68px);
   font-weight: 500;
   line-height: 116%;
-  letter-spacing: -1.36px;
+  letter-spacing: -0.02em;
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: clamp(16px, 2vw, 28px);
 }
 
 .what-we-help-header span {
   color: #23252A;
   font-family: "Ivar Text", serif;
-  font-size: 68px;
+  font-size: clamp(36px, 5.2vw, 68px);
   font-style: italic;
   font-weight: 400;
   line-height: 116%;
-  letter-spacing: -2.04px;
+  letter-spacing: -0.03em;
 }
 
 .what-we-help-container-lower {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: clamp(24px, 3vw, 0px);
+}
+
+/* ── Tech pills cluster ─────────────────────────── */
+.our-technologies {
+  width: clamp(280px, 45vw, 601px);
+  height: clamp(100px, 15vw, 191px);
+  position: relative;
+  flex-shrink: 0;
 }
 
 .our-technologies-item {
@@ -549,59 +576,64 @@ body {
   background: rgba(255, 255, 255, 0.20);
   backdrop-filter: blur(15px);
   display: inline-flex;
-  padding: 20px 50px 24px 50px;
+  padding: clamp(10px, 1.5vw, 20px) clamp(20px, 3.8vw, 50px) clamp(12px, 1.8vw, 24px);
   justify-content: center;
   align-items: center;
   gap: 10px;
   color: #23252A;
   font-family: "Ivar Text", serif;
-  font-size: 26px;
+  font-size: clamp(14px, 2vw, 26px);
   font-style: italic;
   font-weight: 400;
   line-height: 116%;
-  letter-spacing: -0.78px;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
 }
 
+/* pill positions scaled to % so they track the container */
 .cloud-devops {
   position: absolute;
-  left: 163.41px;
-  bottom: 12.23px;
+  left: 27.2%;
+  bottom: 6.4%;
 }
 
 .web-mobile {
   position: absolute;
-  left: 0px;
-  top: 50px;
+  left: 0;
+  top: 26.2%;
   transform: rotate(-30.848deg);
 }
 
 .ai {
   position: absolute;
-  left: 282.41px;
-  top: 11.98px;
+  left: 47%;
+  top: 6.3%;
   transform: rotate(-17.079deg);
 }
 
 .backend {
   position: absolute;
-  left: 399.97px;
-  top: 62.96px;
+  left: 66.5%;
+  top: 32.9%;
   transform: rotate(29.998deg);
 }
 
+/* ── Feature list ───────────────────────────────── */
 .learn-about-features-container {
   display: flex;
-  width: 652px;
+  width: clamp(260px, 50vw, 652px);
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
 }
 
 .learn-about-features-container hr {
-  margin: 0%;
+  margin: 0;
   width: 100%;
   opacity: 0.2;
   background: #23252A;
+  border: none;
+  border-top: 1px solid #23252A;
 }
 
 .learn-about-text-container {
@@ -613,10 +645,10 @@ body {
 .learn-about-svg-container {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
   aspect-ratio: 1/1;
-  fill: rgba(255, 255, 255, 0.50);
   background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 4px 10.2px rgba(0, 0, 0, 0.07), inset 0px 4px 4px rgba(235, 235, 235, 0.03);
+  box-shadow: 0 4px 10.2px rgba(0, 0, 0, 0.07), inset 0 4px 4px rgba(235, 235, 235, 0.03);
   filter: drop-shadow(0 4px 10.2px rgba(0, 0, 0, 0.07));
   border-radius: 50%;
   display: flex;
@@ -627,18 +659,16 @@ body {
 .learn-about-svg {
   width: 12px;
   height: 12px;
-  aspect-ratio: 1/1;
 }
 
 .learn-about-text-container p {
   color: #4B4D51;
   font-family: "Work Sans", sans-serif;
-  font-size: 18px;
-  font-style: normal;
+  font-size: clamp(14px, 1.35vw, 18px);
   font-weight: 500;
   line-height: 140%;
-  letter-spacing: -0.36px;
-  margin: 0%;
+  letter-spacing: -0.02em;
+  margin: 0;
 }
 
 .about {
