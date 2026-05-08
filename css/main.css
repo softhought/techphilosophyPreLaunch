@@ -44,8 +44,8 @@ body {
 .blur-orange {
   position: absolute;
   top: 416px;
-  left: -340px;
-  width: 4000px;
+  left: -20%;
+  width: 200%;
   height: 632px;
   z-index: 0;
   background: #f5b799;
@@ -55,8 +55,8 @@ body {
 .blur-yellow {
   position: absolute;
   top: 1685px;
-  left: -280px;
-  width: 4000px;
+  left: -20%;
+  width: 200%;
   height: 353px;
   z-index: 0;
   opacity: 0.6;
@@ -67,8 +67,8 @@ body {
 .blur-blue {
   position: absolute;
   top: 2654px;
-  left: -200px;
-  width: 4000px;
+  left: -20%;
+  width: 200%;
   height: 808px;
   z-index: 0;
   background: #74B4FA;
@@ -78,8 +78,8 @@ body {
 .blur-gray {
   position: absolute;
   top: 5109px;
-  left: -280px;
-  width: 4000px;
+  left: -20%;
+  width: 200%;
   height: 505px;
   z-index: 0;
   background: #B8BEC8;
@@ -89,8 +89,8 @@ body {
 .blur-yellow2 {
   position: absolute;
   bottom: -100px;
-  left: -280px;
-  width: 4000px;
+ left: -20%;
+  width: 200%;
   height: 479px;
   z-index: 0;
   opacity: 0.6;
@@ -101,8 +101,8 @@ body {
 .blur-pink {
   position: absolute;
   top: 2062px;
-  left: -120px;
-  width: 4000px;
+  left: -20%;
+  width: 200%;
   height: 353px;
   z-index: 0;
   opacity: 0.6;
@@ -113,8 +113,8 @@ body {
 .blur-pink2 {
   position: absolute;
   top: 4162px;
-  left: -120px;
-  width: 4000px;
+  left: -20%;
+  width: 200%;
   height: 605px;
   z-index: 0;
   opacity: 0.6;
@@ -746,6 +746,11 @@ body {
   margin: 0;
 }
 
+.about-header-title2-font {
+  font-family:  "Satoshi", sans-serif;
+  font-style: normal;
+}
+
 /* ── Orbit + profiles bound together ────────────── */
 .orbit-profiles-wrap {
   order: 2;
@@ -757,6 +762,7 @@ body {
   transform: rotate(-165deg);
   width: 100%;
   position: relative;
+  margin-top: 20px;
 }
 
 .orbit-section svg {
