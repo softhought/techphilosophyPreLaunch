@@ -22,9 +22,6 @@ function createOrbitAnimation({ path1Id, path2Id, ball1Id, ball2Id, cacheKey }) 
   } = ORBIT_CONFIG;
 
   const maxAngles = 360 * resolution;
-  const minGapWidth = 2;
-  const narrowSmoothGapWidth = 14;
-  const repairWindow = 4;
   let trackBounds = Array.from({ length: maxAngles }, () => ({
     min: Infinity,
     max: 0,
@@ -32,45 +29,6 @@ function createOrbitAnimation({ path1Id, path2Id, ball1Id, ball2Id, cacheKey }) 
 
   let animationId = null;
   let time = initialTime;
-  const narrowStates = new WeakMap();
-
-  function isVisibleBound(bounds) {
-    return bounds.min !== Infinity && bounds.max - bounds.min > minGapWidth;
-  }
-
-  function getRepairedBounds(angleIndex) {
-    let previous = null;
-    let next = null;
-    let previousOffset = 0;
-    let nextOffset = 0;
-
-    for (let offset = 1; offset <= repairWindow; offset++) {
-      const previousBounds =
-        trackBounds[(angleIndex - offset + maxAngles) % maxAngles];
-      const nextBounds = trackBounds[(angleIndex + offset) % maxAngles];
-
-      if (!previous && isVisibleBound(previousBounds)) {
-        previous = previousBounds;
-        previousOffset = offset;
-      }
-
-      if (!next && isVisibleBound(nextBounds)) {
-        next = nextBounds;
-        nextOffset = offset;
-      }
-
-      if (previous && next) break;
-    }
-
-    if (!previous || !next) return null;
-
-    const ratio = previousOffset / (previousOffset + nextOffset);
-
-    return {
-      min: previous.min + (next.min - previous.min) * ratio,
-      max: previous.max + (next.max - previous.max) * ratio,
-    };
-  }
 
   function mapPathDataAsync(pathId, done) {
     const path = document.getElementById(pathId);
@@ -145,51 +103,24 @@ function createOrbitAnimation({ path1Id, path2Id, ball1Id, ball2Id, cacheKey }) 
       else if (bNext.min !== Infinity) bounds = bNext;
     }
 
-    let gapWidth = bounds.max - bounds.min;
+    const gapWidth = bounds.max - bounds.min;
 
-    if (bounds.min !== Infinity && gapWidth <= minGapWidth) {
-      const repairedBounds = getRepairedBounds(angleIndex);
-
-      if (repairedBounds) {
-        bounds = repairedBounds;
-        gapWidth = bounds.max - bounds.min;
-      }
-    }
-
-    if (bounds.min !== Infinity && gapWidth > minGapWidth) {
+    if (bounds.min !== Infinity && gapWidth > 2) {
       ballGroup.style.opacity = 1;
 
-      let trackRadius = (bounds.min + bounds.max) / 2;
-      let ballRadius = gapWidth / 3;
-
-      if (gapWidth <= narrowSmoothGapWidth) {
-        const state = narrowStates.get(ballGroup) || {
-          trackRadius,
-          ballRadius,
-        };
-
-        state.trackRadius += (trackRadius - state.trackRadius) * 0.45;
-        state.ballRadius += (ballRadius - state.ballRadius) * 0.45;
-        narrowStates.set(ballGroup, state);
-
-        trackRadius = state.trackRadius;
-        ballRadius = state.ballRadius;
-      } else {
-        narrowStates.delete(ballGroup);
-      }
-
+      const trackRadius = (bounds.min + bounds.max) / 2;
       const actualX = cx + trackRadius * Math.cos(angleRad);
       const actualY = cy + trackRadius * Math.sin(angleRad);
 
       ballGroup.setAttribute("transform", `translate(${actualX}, ${actualY})`);
 
+      const ballRadius = gapWidth / 3;
       const core = ballGroup.querySelector(".core");
       const ring = ballGroup.querySelector(".ring");
 
       core?.setAttribute("r", ballRadius);
       ring?.setAttribute("r", Math.max(ballRadius - 0.5, 0.5));
     } else {
-      narrowStates.delete(ballGroup);
       ballGroup.style.opacity = 0;
     }
   }
@@ -280,7 +211,7 @@ window.addEventListener("DOMContentLoaded", () => {
     path2Id: "orbitPath2",
     ball1Id: "ball1",
     ball2Id: "ball2",
-    cacheKey: "orbitBoundsHeroV2",
+    cacheKey: "orbitBoundsHero",
   });
 
   createOrbitAnimation({
@@ -288,7 +219,7 @@ window.addEventListener("DOMContentLoaded", () => {
     path2Id: "orbitPath2Center",
     ball1Id: "ball1Center",
     ball2Id: "ball2Center",
-    cacheKey: "orbitBoundsCenterV2",
+    cacheKey: "orbitBoundsCenter",
   });
 
   createOrbitAnimation({
@@ -296,7 +227,7 @@ window.addEventListener("DOMContentLoaded", () => {
     path2Id: "orbitPath2About",
     ball1Id: "ball1About",
     ball2Id: "ball2About",
-    cacheKey: "orbitBoundsAboutV2",
+    cacheKey: "orbitBoundsAbout",
   });
 
   initCurveBall();
