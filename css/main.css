@@ -389,9 +389,11 @@ body {
 .central-vector-container {
   position: relative;
   width: 100%;
-  max-width: 1320px;
   padding-top: clamp(360px, 52vw, 687px);
   margin-top: clamp(60px, 14vw, 192px);
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .central-vector {
@@ -671,36 +673,51 @@ body {
   margin: 0;
 }
 
-.about {
-  max-width: 1320px;
-  height: 1600px;
-  flex-shrink: 0;
-  font-size: 26px;
-  color: #23252a;
-  font-family: Satoshi;
-  position: relative;
-}
-
 .about-container {
   position: relative;
   z-index: 1;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 60px;
+  padding: 0 clamp(16px, 4.5vw, 60px);
   box-sizing: border-box;
 }
 
+.about {
+  max-width: 1320px;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  color: #23252a;
+  font-family: Satoshi, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ─────────────────────────────────────── */
 .header-container2 {
   display: flex;
   justify-content: flex-end;
+  order: 1;
+}
+
+.header-title {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: clamp(32px, 5.2vw, 68px);
+  line-height: 116%;
+  letter-spacing: -0.02em;
+  color: #23252a;
+  text-align: left;
+  margin: 0;
 }
 
 .header-title2 {
   font-family: "Ivar Text", serif;
   font-style: italic;
   font-weight: 400;
-  font-size: 68px;
+  font-size: clamp(32px, 5.2vw, 68px);
   line-height: 116%;
   letter-spacing: -0.03em;
   color: #23252a;
@@ -708,110 +725,153 @@ body {
   margin: 0;
 }
 
-.header-title {
-  font-family: "Satoshi", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 68px;
-  line-height: 116%;
-  letter-spacing: -0.02em;
-  color: #23252a;
-  text-align: left;
-  margin: 0;
+/* ── Orbit + profiles bound together ────────────── */
+.orbit-profiles-wrap {
+  order: 2;
+  position: relative;
+  width: 100%;
 }
 
 .orbit-section {
   transform: rotate(-165deg);
+  width: 100%;
   position: relative;
-  top: 0px;
 }
 
-.profile-container3 {
+.orbit-section svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Profiles: absolute inside the wrap ─────────── */
+/* % values track the SVG at every viewport width   */
+.profiles-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* let SVG ball animation through */
+}
+
+.profile-container3,
+.profile-container4 {
+  position: absolute;
+  pointer-events: all;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
-  width: 320px;
-  display: flex;
+  gap: clamp(10px, 1.8vw, 24px);
+  width: clamp(140px, 20vw, 290px);
+}
+
+/* Olga — top-left quadrant of the SVG */
+.profile-container3 {
+  top: 15%;
+  left: 7%;
+}
+
+/* Gourab — lower-right of centre */
+.profile-container4 {
+  top: 60%;
+  left: 50%;
+}
+
+/* ── Card image + LinkedIn badge ────────────────── */
+.profile-card-img-wrap {
   position: relative;
-  top: -430px;
-  left: 95px;
+  width: 100%;
 }
 
 .profile-image-container {
-  position: relative;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  display: block;
+  border-radius: 16px;
 }
 
+.linkedin-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: clamp(24px, 2.8vw, 34px);
+  height: clamp(24px, 2.8vw, 34px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.linkedin-badge:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.linkedin-badge svg {
+  width: clamp(9px, 1vw, 14px);
+  height: clamp(9px, 1vw, 14px);
+  display: block;
+}
+
+/* ── Profile info ───────────────────────────────── */
 .profile-info-container {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 4px;
+  align-self: stretch;
 }
 
 .profile-info3 {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 3px;
+  align-self: stretch;
 }
 
 .mission-title {
-  width: 151px;
-  height: 30px;
-  position: relative;
-  font-size: 26px;
+  font-size: clamp(13px, 1.6vw, 22px);
   letter-spacing: -0.02em;
-  /* line-height: 116%; */
   font-weight: 500;
   font-family: "Satoshi", sans-serif;
   color: #23252a;
-  text-align: left;
-  display: inline-block;
   margin: 0;
 }
 
 .profile-role {
-  width: 100%;
-  /* height: 25px; */
-  position: relative;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  /* line-height: 140%; */
-  display: inline-block;
+  font-size: clamp(11px, 1vw, 15px);
+  letter-spacing: -0.01em;
   font-family: "Ivar Text", serif;
+  font-style: italic;
   color: #757677;
-  text-align: left;
   margin: 0;
 }
 
-.profile-container4 {
-  position: relative;
-  top: -750px;
-  left: 650px;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-}
-
+/* ── Quote ──────────────────────────────────────── */
 .about-text-container {
-  position: absolute;
-  bottom: 0;
-  width: 1088px;
+  order: 3;
+  position: relative;
+  width: 100%;
+  max-width: clamp(280px, 82vw, 1088px);
+  margin-top: clamp(245px, 4vw, 60px);
+  padding-bottom: clamp(40px, 5vw, 80px);
 }
 
 .about-text-container p {
   color: #23252A;
   font-family: "Satoshi", sans-serif;
-  font-size: 42px;
-  font-style: normal;
+  font-size: clamp(22px, 3.2vw, 42px);
   font-weight: 500;
   line-height: 110%;
-  letter-spacing: -0.84px;
+  letter-spacing: -0.02em;
+  margin: 0;
 }
 
 .project-header-container {
@@ -820,39 +880,41 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 60px;
+  padding: 0 clamp(16px, 4.5vw, 60px);
   box-sizing: border-box;
-  height: 505px;
-  margin-top: 97px;
+  height: clamp(220px, 38vw, 505px);
+  margin-top: clamp(40px, 7vw, 97px);
+  overflow: visible;
 }
 
 .project-header {
   font-family: "Ivar Text", serif;
-  font-size: 150px;
+  font-size: clamp(48px, 11.5vw, 150px);
   font-style: italic;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: -6px;
-
+  letter-spacing: clamp(-2px, -0.4vw, -6px);
   opacity: 0.4;
   background: linear-gradient(90deg, #FFA631 5.34%, #3E3E3E 112.4%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
+  white-space: nowrap;
+   padding-right: 0.12em;
 }
 
 .title-1 {
   position: absolute;
-  top: 105px;
-  left: 60px;
+  top: clamp(30px, 8vw, 105px);
+  left: clamp(16px, 4.5vw, 60px);
 }
 
 .title-2 {
   position: absolute;
-  bottom: 100px;
-  right: 60px;
-  width: 535px;
+  bottom: clamp(30px, 8vw, 100px);
+  right: clamp(16px, 4.5vw, 60px);
+  width: auto; /* let font-size drive the width */
 }
 
 .contact-container {
@@ -889,12 +951,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: clamp(16px, 6vw, 80px);
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  margin-top: 40px;
+  margin-top: clamp(20px, 3vw, 40px);
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.email-address {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: #23252A;
+  font-family: "Ivar Text", serif;
+  font-size: clamp(22px, 5.2vw, 68px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 116%;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
 }
 
 .curly-brace {
@@ -905,26 +983,11 @@ body {
   opacity: 0.2;
   color: #4B4D51;
   font-family: "Satoshi", sans-serif;
-  font-size: 68px;
-  font-style: normal;
+  font-size: clamp(22px, 5.2vw, 68px);
   font-weight: 500;
   line-height: 116%;
-  letter-spacing: -1.36px;
-}
-
-.email-address {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  color: #23252A;
-  font-family: "Ivar Text", serif;
-  font-size: 68px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 116%;
-  letter-spacing: -2.04px;
-  text-decoration: underline;
-  white-space: nowrap;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
 }
 
 .curly-brace-2 {
@@ -934,17 +997,17 @@ body {
   opacity: 0.2;
   color: #4B4D51;
   font-family: "Satoshi", sans-serif;
-  font-size: 68px;
-  font-style: normal;
+  font-size: clamp(22px, 5.2vw, 68px);
   font-weight: 500;
   line-height: 116%;
-  letter-spacing: -1.36px;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
 }
 
 .contact-us-ellipse-blur {
   height: 1607.247px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .contact-us-ellipse-bg {

@@ -351,3 +351,61 @@
     font-size: 14px;
   }
 }
+
+
+/* ── Tablet ─────────────────────────────────────── */
+@media (max-width: 900px) {
+  .header-container2 {
+    justify-content: flex-start;
+  }
+
+  .profile-container3 {
+    top: 25%;
+    left: 5%;
+    width: clamp(130px, 22vw, 220px);
+  }
+
+  .profile-container4 {
+    top: 48%;
+    left: 36%;
+    width: clamp(130px, 22vw, 220px);
+  }
+}
+
+/* ── Mobile ─────────────────────────────────────── */
+@media (max-width: 560px) {
+  .about-container {
+    padding: 0 16px;
+  }
+
+  .profile-container3 {
+    top: 20%;
+    left: 3%;
+    width: 36vw;
+  }
+
+  .profile-container4 {
+    top: 44%;
+    left: 34%;
+    width: 36vw;
+  }
+
+  .about-text-container p {
+    font-size: 20px;
+  }
+}
+
+/* ── Small mobile ───────────────────────────────── */
+@media (max-width: 380px) {
+  .profile-container3 {
+    top: 18%;
+    left: 2%;
+    width: 38vw;
+  }
+
+  .profile-container4 {
+    top: 42%;
+    left: 32%;
+    width: 38vw;
+  }
+}
