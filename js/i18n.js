@@ -27,7 +27,7 @@ const translations = {
     project_header_1: "Have a project",
     project_header_2: "in mind?",
     contact_header: "Drop us an email",
-    contact_location: "Köln, Germany",
+    contact_location: "Cologne, Germany",
   },
   de: {
     hero_top_text: "Unsere vollstaendige Website startet in Kuerze – fuer ein erstes Gespraech stehen wir Ihnen jedoch bereits heute gerne zur Verfuegung",
