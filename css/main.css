@@ -746,6 +746,11 @@ body {
   margin: 0;
 }
 
+.about-header-title2-font {
+  font-family:  "Satoshi", sans-serif;
+  font-style: normal;
+}
+
 /* ── Orbit + profiles bound together ────────────── */
 .orbit-profiles-wrap {
   order: 2;
@@ -757,6 +762,7 @@ body {
   transform: rotate(-165deg);
   width: 100%;
   position: relative;
+  margin-top: 20px;
 }
 
 .orbit-section svg {
