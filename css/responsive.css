@@ -234,55 +234,6 @@
   }
 }
 
-/* Tablet */
-@media (max-width: 768px) {
-  .text-1 {
-    top: 10%;
-    left: 5%;
-  }
-
-  .text-2 {
-    top: 50%;
-    right: 5%;
-  }
-
-  .central-vector-main-text {
-    top: 28%;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .central-vector-container {
-    padding-top: 420px;
-    margin-top: 40px;
-  }
-
-  .text-1 {
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .text-2 {
-    top: 13%;
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .central-vector-main-text {
-    top: 24%;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-  }
-
-  .central-vector-main-span-text {
-    text-align: center;
-  }
-}
-
 /* ── Tablet ─────────────────────────────────────── */
 @media (max-width: 900px) {
   .what-we-help-container {

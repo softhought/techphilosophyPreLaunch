@@ -89,7 +89,7 @@ body {
 .blur-yellow2 {
   position: absolute;
   bottom: -100px;
- left: -20%;
+  left: -20%;
   width: 200%;
   height: 479px;
   z-index: 0;
@@ -317,7 +317,7 @@ body {
   z-index: 1;
   margin-top: clamp(60px, 14vw, 192px);
   width: 100%;
-  height: clamp(200px, 22vw, 300px);
+  /* height: clamp(200px, 22vw, 300px); */
 }
 
 .curve-text-container {
@@ -392,28 +392,17 @@ body {
   transform: translate(-50%, -30%);
 }
 
-@media (max-width: 1150px) {
-  .curve-image-container {
-    top: 60%;
-  }
-}
-
-@media (max-width: 990px) {
-  .curve-image-container {
-    top: 65%;
-  }
-}
-
 /* Central Vector */
 
 .central-vector-container {
-  position: relative;
-  width: 100%;
-  padding-top: clamp(360px, 52vw, 687px);
+   position: relative;
+  /* 60px gutter — mirrors the rest of the page */
+  width: calc(100% - 120px);
+  margin-left: 60px;
+  margin-right: 60px;
+  /* Height always tracks the SVG viewBox ratio (500/1320) */
+  aspect-ratio: 1320 / 500;
   margin-top: clamp(60px, 14vw, 192px);
-  max-width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .central-vector {
@@ -473,13 +462,17 @@ body {
 }
 
 .text-1 {
-  top: 27.5%;
+  /* SVG y≈135 out of 500 → 135/500 = 27% of container height */
+  top: 30%;
   left: 5.5%;
+  transform: translateY(-50%);
 }
 
 .text-2 {
-  top: 64.8%;
-  right: 9.4%;
+  /* SVG y≈324 out of 500 → 324/500 = 64.8% of container height */
+  top: 78.8%;
+  right: 15.4%;
+  transform: translateY(-50%);
 }
 
 .central-vector-main-text {
@@ -498,7 +491,7 @@ body {
   letter-spacing: -0.02em;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   top: 45%;
   z-index: 2;
 }
@@ -553,7 +546,6 @@ body {
   position: absolute;
   bottom: clamp(60px, 18vw, 250px);
   width: calc(100% - clamp(32px, 9vw, 120px));
-  max-width: 1320px;
 }
 
 .what-we-help-header {
@@ -643,7 +635,7 @@ body {
 /* ── Feature list ───────────────────────────────── */
 .learn-about-features-container {
   display: flex;
-  width: clamp(260px, 50vw, 652px);
+  width: 50%;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
@@ -746,7 +738,7 @@ body {
 }
 
 .about-header-title2-font {
-  font-family:  "Satoshi", sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-style: normal;
 }
 
