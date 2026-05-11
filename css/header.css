@@ -17,8 +17,7 @@
 
 /* CONTAINER */
 .header-container {
-  padding: 20px 60px 20px;
-  max-width: 1440px;
+  padding: 18px 60px;
   margin: auto;
   width: 100%;
   box-sizing: border-box;
@@ -32,7 +31,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 51px;
 }
 
 /* LOGO */
