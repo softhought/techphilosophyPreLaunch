@@ -292,7 +292,7 @@
 
   .what-we-help-container-upper-text {
     position: absolute;
-    top: 0;
+    top: 10%;
     right: 24px;
     left: 24px;
     width: auto;
@@ -302,22 +302,20 @@
     position: relative;
     bottom: auto;
     width: 100%;
-    margin-top: 40px;
   }
 
   .what-we-help-container-lower {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
-  }
-
-  .our-technologies {
-    width: 100%;
-    height: clamp(140px, 22vw, 200px);
   }
 
   .learn-about-features-container {
     width: 100%;
+  }
+
+  .what-we-help-header {
+    text-align: center;
   }
 }
 
@@ -405,5 +403,39 @@
     top: 42%;
     left: 32%;
     width: 38vw;
+  }
+}
+
+/* ── Tablet: curve + central vector ───────────── */
+@media (max-width: 900px) {
+  .curve-vector-container {
+    margin-top: clamp(40px, 10vw, 100px);
+  }
+
+  .curve-text-container {
+    position: static;
+    width: calc(100% - 48px);
+    margin: clamp(16px, 3vw, 24px) 24px 0;
+  }
+
+  .central-vector-container {
+    width: calc(100% - 48px);
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: clamp(40px, 10vw, 100px);
+  }
+
+  .text-1 {
+    left: 2%;
+    top: 30%;
+  }
+
+  .text-2 {
+    right: 6%;
+    top: 74%;
+  }
+
+  .central-vector-main-text {
+    top: 54%;
   }
 }

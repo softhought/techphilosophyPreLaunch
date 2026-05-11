@@ -270,12 +270,12 @@ body {
 
 .middle-header-container {
   width: 100%;
-  min-height: 240px;
   padding: 0 60px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  margin-top: 170px;
+  /* scales gracefully: 110px at 1440px, 60px at ~780px */
+  margin-top: clamp(60px, 12vw, 170px);
   overflow: visible;
 }
 
@@ -308,7 +308,8 @@ body {
   font-style: italic;
   font-weight: 400;
   line-height: 1.05;
-  letter-spacing: -4.8px;
+  /* em-based so it always tracks font-size */
+  letter-spacing: -0.04em;
 
   opacity: 0.4;
   background: linear-gradient(90deg, #cb7aa9 0%, #666 100%);
@@ -322,15 +323,17 @@ body {
   padding-right: 0.15em;
   padding-bottom: 0.08em;
 
+  /* fluid: shrinks from 120px at wide screens down to ~32px on mobile */
+  font-size: clamp(32px, 8.5vw, 120px);
   white-space: nowrap;
 }
 
 .middle-header-1 {
-  font-size: 110px;
+  font-size: clamp(28px, 7.6vw, 110px);
 }
 
 .middle-header-2 {
-  font-size: 120px;
+  font-size: clamp(32px, 8.5vw, 120px);
 }
 
 /* Curve Vector Section */
@@ -342,6 +345,17 @@ body {
   margin-top: clamp(60px, 14vw, 192px);
   width: 100%;
   /* height: clamp(200px, 22vw, 300px); */
+}
+
+.curve-media {
+  position: relative;
+  width: 100%;
+}
+
+.curve-media svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .curve-text-container {
@@ -487,7 +501,7 @@ body {
 
 .text-1 {
   /* SVG y≈135 out of 500 → 135/500 = 27% of container height */
-  top: 30%;
+  top: 27%;
   left: 5.5%;
   transform: translateY(-50%);
 }
@@ -516,7 +530,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 45%;
+  top: 52%;
   z-index: 2;
 }
 
@@ -551,7 +565,7 @@ body {
   align-items: flex-start;
   gap: clamp(16px, 3vw, 40px);
   position: absolute;
-  top: 0;
+  top: 10%;
   right: clamp(20px, 20vw, 270px);
 }
 
@@ -715,12 +729,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 clamp(16px, 4.5vw, 60px);
+  padding-left :clamp(16px, 4.5vw, 60px);
   box-sizing: border-box;
 }
 
 .about {
-  max-width: 1320px;
   width: 100%;
   height: auto;
   flex-shrink: 0;
@@ -811,20 +824,20 @@ body {
 
 /* Olga — top-left quadrant of the SVG */
 .profile-container3 {
-  top: 15%;
-  left: 7%;
+  top: 25%;
+  left: 10%;
 }
 
 /* Gourab — lower-right of centre */
 .profile-container4 {
   top: 60%;
-  left: 50%;
+  left: 45%;
 }
 
 /* ── Card image + LinkedIn badge ────────────────── */
 .profile-card-img-wrap {
   position: relative;
-  width: 100%;
+  width: 150%;
 }
 
 .profile-image-container {
@@ -903,7 +916,7 @@ body {
   position: relative;
   width: 100%;
   max-width: clamp(280px, 82vw, 1088px);
-  margin-top: clamp(245px, 4vw, 60px);
+  margin-top: clamp(360px, 4vw, 60px);
   padding-bottom: clamp(40px, 5vw, 80px);
 }
 
