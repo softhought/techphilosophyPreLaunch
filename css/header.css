@@ -17,7 +17,7 @@
 
 /* CONTAINER */
 .header-container {
-  padding: 18px 60px;
+  padding: 16px 60px;
   margin: auto;
   width: 100%;
   box-sizing: border-box;
@@ -38,7 +38,6 @@
   width: 140px;
   height: 40px;
 }
-
 
 .language-selector {
   display: flex;
