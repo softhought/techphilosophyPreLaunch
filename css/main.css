@@ -261,7 +261,7 @@ body {
 
 .hero-image {
   position: absolute;
-  top: -130px;
+  top: -100px;
   left: 200px;
   width: 450px;
 }
@@ -985,7 +985,7 @@ body {
 
 .contact-text-container {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   text-align: center;
