@@ -23,7 +23,7 @@ const translations = {
     learn_about_5: "Ongoing support and optimization",
     about_header_title: "Built by founders<br /> who understand both",
     about_header_title2: "operations and<br /> technology",
-    about_quote: '"We started this studio to build the kind of digital partner we always wished existed: thoughtful, technically strong, honest about what works, and focused on solutions that genuinely help businesses move forward"',
+    about_quote: '"We started this studio to build the kind of digital partner we always wished existed: thoughtful, technically strong, honest about what works, and focused on solutions that genuinely help businesses move forward."',
     project_header_1: "Have a project",
     project_header_2: "in mind?",
     contact_header: "Drop us an email",
