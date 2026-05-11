@@ -194,7 +194,10 @@
   .middle-header-2 {
     font-size: 94px;
     letter-spacing: -4px;
-    height: 110px;
+    height: auto;
+    line-height: 1.1;
+    text-align: center;
+    white-space: normal;
   }
 }
 
@@ -212,7 +215,10 @@
   .middle-header-2 {
     font-size: 82px;
     letter-spacing: -3.2px;
-    height: 92px;
+    height: auto;
+    line-height: 1.1;
+    text-align: center;
+    white-space: normal;
   }
 }
 
@@ -230,7 +236,48 @@
   .middle-header-2 {
     font-size: 82px;
     letter-spacing: -2.8px;
-    height: 78px;
+    height: auto;
+    line-height: 1.1;
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+/* =========================
+   768px
+   ========================= */
+
+@media (max-width: 768px) {
+  .middle-header-container {
+    min-height: 140px;
+    margin-top: 90px;
+    padding: 0 24px;
+  }
+
+  .middle-header-1,
+  .middle-header-2 {
+    font-size: 48px;
+    letter-spacing: -1.2px;
+    height: auto;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .middle-header-1 {
+    margin-bottom: 6px;
+  }
+}
+
+/* =========================
+   480px
+   ========================= */
+
+@media (max-width: 480px) {
+  .middle-header-1,
+  .middle-header-2 {
+    font-size: 36px;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
   }
 }
 
