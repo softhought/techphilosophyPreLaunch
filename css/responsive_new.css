@@ -3,7 +3,43 @@
    Breakpoints are ordered from large screens to small screens.
    This file only overrides layout values from main.css/header.css.
    ========================================================= */
-
+/* Large laptops and small desktops: 1920px and below */
+@media (max-width: 3840px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 17%;
+  }
+}
+@media (max-width: 2560px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 26%;
+  }
+}
+@media (max-width: 1920px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 36%;
+  }
+}
+@media (max-width: 1536px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 45%;
+  }
+}
+@media (max-width: 1440px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 48%;
+  }
+}
+@media (max-width: 1366px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 51%;
+  }
+}
 /* Large laptops and small desktops: 1280px and below */
 @media (max-width: 1280px) {
   .hero {
@@ -534,7 +570,7 @@
 
   .hero-image {
     width: min(78vw, 20rem);
-    top: 1.25rem;
+    top: -2.75rem;
   }
 
   .curve-vector-container > svg {
