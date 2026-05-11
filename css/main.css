@@ -365,7 +365,7 @@ body {
   align-items: flex-start;
   gap: clamp(16px, 3vw, 40px);
   position: absolute;
-  top: clamp(-40px, -6vw, -80px);
+  top: clamp(-80px, -6vw, -80px);
   right: clamp(20px, 16vw, 270px);
 }
 
@@ -749,6 +749,10 @@ body {
   display: flex;
   justify-content: flex-end;
   order: 1;
+}
+
+.about-header{
+  padding-right: 60px;
 }
 
 .header-title {
