@@ -46,6 +46,14 @@
     left: 12.5rem;
   }
 
+  .hero-orbit-wrapper {
+    width: 60%;
+  }
+
+  .hero-orbit {
+    width: 140%;
+  }
+
   .middle-header-container {
     min-height: 13.75rem;
     margin-top: 9.375rem;
@@ -110,6 +118,14 @@
     width: 24.375rem;
     top: -7.5rem;
     left: 11.25rem;
+  }
+
+  .hero-orbit-wrapper {
+    width: 60%;
+  }
+
+  .hero-orbit {
+    width: 140%;
   }
 
   .middle-header-container {
@@ -178,6 +194,14 @@
     left: 9.375rem;
   }
 
+  .hero-orbit-wrapper {
+    width: 60%;
+  }
+
+  .hero-orbit {
+    width: 140%;
+  }
+
   .middle-header-container {
     min-height: 10.625rem;
     margin-top: 6.875rem;
@@ -185,7 +209,7 @@
 
   .middle-header-1,
   .middle-header-2 {
-    font-size: 4.5rem;
+    font-size: 5.125rem;
     letter-spacing: -0.175rem;
   }
 }
@@ -256,15 +280,26 @@
 
   .curve-text-container,
   .what-we-help-container-upper-text {
-    position: relative;
-    top: auto;
-    right: auto;
     width: min(100%, 36.25rem);
     margin-left: auto;
   }
 
+  .curve-text-container {
+    position: static;
+    width: calc(100% - 3rem);
+    margin: clamp(1rem, 3vw, 1.5rem) 1.5rem 0;
+  }
+
+  .what-we-help-container-upper-text {
+    position: absolute;
+    top: 10%;
+    right: 1.5rem;
+    left: 1.5rem;
+    width: auto;
+  }
+
   .curve-vector-container {
-    margin-top: 5rem;
+    margin-top: clamp(2.5rem, 10vw, 6.25rem);
     padding: 0 1.5rem;
   }
 
@@ -280,7 +315,9 @@
 
   .central-vector-container {
     width: calc(100% - 3rem);
-    margin: 6rem 1.5rem 0;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: clamp(2.5rem, 10vw, 6.25rem);
   }
 
   .central-vector-text {
@@ -298,21 +335,21 @@
   }
 
   .what-we-help-container {
-    min-height: auto;
-    padding: 6rem 1.5rem 0;
+    min-height: unset;
+    padding: 0 1.5rem;
+    padding-top: clamp(12.5rem, 30vw, 17.5rem);
   }
 
   .what-we-help-bottom-container {
     position: relative;
     bottom: auto;
     width: 100%;
-    margin-top: 3.5rem;
   }
 
   .what-we-help-container-lower {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 2.75rem;
+    align-items: center;
+    gap: 2.5rem;
   }
 
   .our-technologies {
@@ -323,6 +360,10 @@
 
   .learn-about-features-container {
     width: 100%;
+  }
+
+  .what-we-help-header {
+    text-align: center;
   }
 
   .header-container2 {
@@ -345,6 +386,20 @@
     margin-top: clamp(7.5rem, 20vw, 11.25rem);
   }
 
+  .text-1 {
+    top: 30%;
+    left: 2%;
+  }
+
+  .text-2 {
+    top: 74%;
+    right: 6%;
+  }
+
+  .central-vector-main-text {
+    top: 54%;
+  }
+
   .contact-container {
     height: 26.875rem;
   }
@@ -365,14 +420,17 @@
 @media (max-width: 768px) {
   .middle-header-container {
     min-height: 8.75rem;
-    margin-top: 4.5rem;
+    margin-top: 5.625rem;
     padding: 0 1.5rem;
   }
 
   .middle-header-1,
   .middle-header-2 {
+    height: auto;
     font-size: 3rem;
     letter-spacing: -0.075rem;
+    text-align: center;
+    white-space: normal;
   }
 
   .middle-header-1 {
