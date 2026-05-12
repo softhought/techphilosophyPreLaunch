@@ -1,40 +1,93 @@
-/* =========================
-   1280px
-   ========================= */
 
+/* =========================================================
+   Responsive CSS
+   Breakpoints are ordered from large screens to small screens.
+   This file only overrides layout values from main.css/header.css.
+   ========================================================= */
+
+/* Large laptops and small desktops: 1920px and below */
+@media (max-width: 3840px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 17%;
+  }
+}
+
+@media (max-width: 2560px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 26%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 36%;
+  }
+}
+
+@media (max-width: 1536px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 45%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 48%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .hero-orbit-wrapper {
+    position: relative;
+    width: 51%;
+  }
+}
+
+/* Large laptops and small desktops: 1280px and below */
 @media (max-width: 1280px) {
   .hero {
-    min-height: 740px;
+    min-height: 46.25rem;
   }
 
   .hero-top-text {
-    top: 80px;
-    font-size: 15px;
+    top: 5rem;
+    font-size: 0.9375rem;
   }
 
   .hero-content-wrapper {
-    padding-top: 250px;
+    padding-top: 15.625rem;
   }
 
   .hero-content {
-    max-width: 500px;
+    max-width: 31.25rem;
   }
 
   .hero-title {
-    font-size: 58px;
+    font-size: 3.625rem;
   }
 
   .hero-title-2 {
-    font-size: 68px;
+    font-size: 4.25rem;
   }
 
   .hero-description {
-    width: 500px;
-    font-size: 17px;
+    width: min(100%, 31.25rem);
+    font-size: 1.0625rem;
   }
 
   .hero-email {
-    margin-top: 34px;
+    margin-top: 2.125rem;
+  }
+
+  .hero-image {
+    width: 26.25rem;
+    top: -7.5rem;
+    left: 12.5rem;
   }
 
   .hero-orbit-wrapper {
@@ -44,242 +97,152 @@
   .hero-orbit {
     width: 140%;
   }
-
-  .hero-image {
-    width: 420px;
-    top: -120px;
-    left: 200px;
-  }
 }
 
-/* =========================
-   1152px
-   ========================= */
-
-@media (max-width: 1152px) {
-  .hero {
-    min-height: 690px;
-  }
-
-  .hero-top-text {
-    top: 70px;
-  }
-
-  .hero-content-wrapper {
-    padding-top: 230px;
-  }
-
-  .hero-content {
-    max-width: 430px;
-  }
-
-  .hero-title {
-    font-size: 50px;
-    letter-spacing: -1.5px;
-  }
-
-  .hero-title-2 {
-    font-size: 58px;
-    letter-spacing: -2px;
-  }
-
-  .hero-description {
-    width: 410px;
-    font-size: 16px;
-    margin-top: 24px;
-  }
-
-  .hero-email {
-    margin-top: 30px;
-    font-size: 17px;
-  }
-
-  .hero-button {
-    width: 190px;
-    padding: 14px 20px;
-  }
-
-  .hero-orbit-wrapper {
-    width: 60%;
-  }
-
-  .hero-orbit {
-    width: 140%;
-  }
-
-  .hero-image {
-    width: 390px;
-    top: -120px;
-    left: 180px;
-  }
-}
-
-/* =========================
-   1024px
-   ========================= */
-
-@media (max-width: 1024px) {
-  .hero {
-    min-height: 650px;
-  }
-
-  .hero-top-text {
-    top: 55px;
-    font-size: 14px;
-  }
-
-  .hero-content-wrapper {
-    padding-top: 200px;
-  }
-
-  .hero-content {
-    max-width: 390px;
-  }
-
-  .hero-title {
-    font-size: 44px;
-    line-height: 112%;
-    letter-spacing: -1.4px;
-  }
-
-  .hero-title-2 {
-    font-size: 50px;
-    line-height: 96%;
-    letter-spacing: -1.8px;
-  }
-
-  .hero-description {
-    width: 360px;
-    font-size: 15px;
-    margin-top: 22px;
-  }
-
-  .hero-email {
-    margin-top: 28px;
-    font-size: 16px;
-  }
-
-  .hero-button {
-    width: 180px;
-    padding: 13px 18px;
-    font-size: 15px;
-  }
-
-  .hero-orbit-wrapper {
-    width: 60%;
-  }
-
-  .hero-orbit {
-    width: 140%;
-  }
-
-  .hero-image {
-    width: 350px;
-    top: -100px;
-    left: 150px;
-  }
-}
-
-/* =========================
-   1280px
-   ========================= */
-
-@media (max-width: 1280px) {
-  .middle-header-container {
-    min-height: 220px;
-    margin-top: 150px;
+/* Tablets portrait: 900px and below */
+@media (max-width: 900px) {
+  .hero,
+  .contact-container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   .middle-header-1,
   .middle-header-2 {
-    font-size: 94px;
-    letter-spacing: -4px;
-    height: auto;
-    line-height: 1.1;
-    text-align: center;
     white-space: normal;
-  }
-}
-
-/* =========================
-   1152px
-   ========================= */
-
-@media (max-width: 1152px) {
-  .middle-header-container {
-    min-height: 190px;
-    margin-top: 130px;
-  }
-
-  .middle-header-1,
-  .middle-header-2 {
-    font-size: 82px;
-    letter-spacing: -3.2px;
-    height: auto;
-    line-height: 1.1;
-    text-align: center;
-    white-space: normal;
-  }
-}
-
-/* =========================
-   1024px
-   ========================= */
-
-@media (max-width: 1024px) {
-  .middle-header-container {
-    min-height: 170px;
-    margin-top: 110px;
-  }
-
-  .middle-header-1,
-  .middle-header-2 {
-    font-size: 82px;
-    letter-spacing: -2.8px;
-    height: auto;
-    line-height: 1.1;
-    text-align: center;
-    white-space: normal;
-  }
-}
-
-/* =========================
-   768px
-   ========================= */
-
-@media (max-width: 768px) {
-  .middle-header-container {
-    min-height: 140px;
-    margin-top: 90px;
-    padding: 0 24px;
-  }
-
-  .middle-header-1,
-  .middle-header-2 {
-    font-size: 48px;
-    letter-spacing: -1.2px;
-    height: auto;
-    text-align: center;
-    white-space: normal;
+    word-break: break-word;
+    font-size: clamp(2.5rem, 7.5vw, 5rem);
+    letter-spacing: -0.03em;
+    line-height: 1.08;
   }
 
   .middle-header-1 {
-    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  .middle-header-2 {
+    text-align: right;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-top-text {
+    position: static;
+    max-width: 35rem;
+    margin: 0 0 4rem auto;
+    text-align: right;
+  }
+
+  .hero-content-wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3.25rem;
+    padding-top: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(2.625rem, 8vw, 4rem);
+  }
+
+  .hero-title-2 {
+    font-size: clamp(3rem, 9vw, 4.5rem);
+  }
+
+  .hero-orbit-wrapper {
+    width: 100%;
+    min-height: clamp(20rem, 58vw, 30rem);
+  }
+
+  .hero-orbit {
+    width: 125%;
+    top: 2.125rem;
+    left: -16%;
+  }
+
+  .hero-image {
+    width: clamp(17.5rem, 52vw, 26.25rem);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
-/* =========================
-   480px
-   ========================= */
+/* Phones: 560px and below */
+@media (max-width: 560px) {
+  .hero,
+  .curve-vector-container,
+  .what-we-help-container,
+  .about-container,
+  .contact-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 
+  .middle-header-1,
+  .middle-header-2 {
+    font-size: clamp(1.875rem, 8vw, 2.75rem);
+    letter-spacing: -0.025em;
+  }
+
+  .hero {
+    padding-top: 5.5rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .hero-title {
+    font-size: 2.375rem;
+    letter-spacing: -0.0688rem;
+  }
+
+  .hero-title-2 {
+    font-size: 2.75rem;
+    letter-spacing: -0.0813rem;
+  }
+
+  .hero-orbit {
+    width: 170%;
+    left: -42%;
+  }
+
+  .hero-image {
+    width: min(78vw, 20rem);
+    top: -2.75rem;
+  }
+}
+
+/* Small phones: 480px and below */
 @media (max-width: 480px) {
   .middle-header-1,
   .middle-header-2 {
-    font-size: 36px;
-    letter-spacing: -0.8px;
+    font-size: clamp(1.625rem, 7.5vw, 2.25rem);
     line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-title {
+    font-size: 2.125rem;
+  }
+
+  .hero-title-2 {
+    font-size: 2.4375rem;
   }
 }
+
+/* Extra small phones: 380px and below */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 1.9375rem;
+  }
+
+  .hero-title-2 {
+    font-size: 2.1875rem;
+  }
+}
+
 
 /* ── Tablet ─────────────────────────────────────── */
 @media (max-width: 900px) {
