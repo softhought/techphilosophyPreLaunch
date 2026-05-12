@@ -350,7 +350,8 @@
   }
 
   .profile-container4 .profile-orbit-mobile {
-    transform: rotate(-230deg);
+    transform: scaleY(-1) rotate(0deg);
+    transform-origin: center;
   }
 
   .profile-container3 {

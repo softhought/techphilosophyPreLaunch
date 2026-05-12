@@ -9,7 +9,14 @@ const ORBIT_CONFIG = {
   speed: 0.004,
 };
 
-function createOrbitAnimation({ path1Id, path2Id, ball1Id, ball2Id, cacheKey }) {
+function createOrbitAnimation({
+  path1Id,
+  path2Id,
+  ball1Id,
+  ball2Id,
+  cacheKey,
+  config,
+}) {
   const {
     cx,
     cy,
@@ -19,7 +26,7 @@ function createOrbitAnimation({ path1Id, path2Id, ball1Id, ball2Id, cacheKey }) 
     angleTilt,
     initialTime,
     speed,
-  } = ORBIT_CONFIG;
+  } = { ...ORBIT_CONFIG, ...config };
 
   const maxAngles = 360 * resolution;
   const minGapWidth = 2;
@@ -297,6 +304,42 @@ window.addEventListener("DOMContentLoaded", () => {
     ball1Id: "ball1About",
     ball2Id: "ball2About",
     cacheKey: "orbitBoundsAboutV2",
+  });
+
+  createOrbitAnimation({
+    path1Id: "orbitPathProfile1A",
+    path2Id: "orbitPathProfile1B",
+    ball1Id: "ballProfile1A",
+    ball2Id: "ballProfile1B",
+    cacheKey: "orbitBoundsProfile1V1",
+    config: {
+      cx: 177.5,
+      cy: 125.5,
+      a: 170,
+      b: 90,
+      angleTilt: 0,
+      initialTime: 0,
+      speed: 0.006,
+      resolution: 8,
+    },
+  });
+
+  createOrbitAnimation({
+    path1Id: "orbitPathProfile2A",
+    path2Id: "orbitPathProfile2B",
+    ball1Id: "ballProfile2A",
+    ball2Id: "ballProfile2B",
+    cacheKey: "orbitBoundsProfile2V1",
+    config: {
+      cx: 177.5,
+      cy: 125.5,
+      a: 170,
+      b: 90,
+      angleTilt: 0,
+      initialTime: 0,
+      speed: 0.006,
+      resolution: 8,
+    },
   });
 
   initCurveBall();
