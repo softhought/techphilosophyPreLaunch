@@ -82,16 +82,16 @@ function applyTranslations(lang) {
   document.documentElement.lang = lang;
   localStorage.setItem('lang', lang);
 
-  const middleHeader1 = document.querySelector('.middle-header-1');
-  const middleHeader2 = document.querySelector('.middle-header-2');
+  // const middleHeader1 = document.querySelector('.middle-header-1');
+  // const middleHeader2 = document.querySelector('.middle-header-2');
 
-  if (lang === 'de') {
-    middleHeader1.style.fontSize = '96px';
-    middleHeader2.style.fontSize = '96px';
-  } else {
-    middleHeader1.style.fontSize = '110px';
-    middleHeader2.style.fontSize = '120px';
-  }
+  // if (lang === 'de') {
+  //   middleHeader1.style.fontSize = '96px';
+  //   middleHeader2.style.fontSize = '96px';
+  // } else {
+  //   middleHeader1.style.fontSize = '110px';
+  //   middleHeader2.style.fontSize = '120px';
+  // }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
