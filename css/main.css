@@ -814,6 +814,22 @@ body {
   pointer-events: none;
   /* let SVG ball animation through */
 }
+.profile-orbit-mobile {
+  display: none;
+  position: absolute;
+  top: -12%;
+  left: -18%;
+  width: 136%;
+  transform: rotate(-180deg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.profile-orbit-mobile svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .profile-container3,
 .profile-container4 {
@@ -842,6 +858,7 @@ body {
 .profile-card-img-wrap {
   position: relative;
   width: 150%;
+  z-index: 1;
 }
 
 .profile-image-container {
@@ -886,6 +903,8 @@ body {
   align-items: flex-start;
   gap: 4px;
   align-self: stretch;
+  position: relative;
+  z-index: 1;
 }
 
 .profile-info3 {
