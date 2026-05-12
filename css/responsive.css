@@ -467,39 +467,78 @@
 
 /* ── Tablet ─────────────────────────────────────── */
 @media (max-width: 900px) {
+  .about-container {
+    padding-top: clamp(24px, 6vw, 48px);
+  }
+
   .header-container2 {
     justify-content: flex-start;
   }
 
+  .orbit-section {
+    display: none;
+  }
+
+  .profiles-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(56px, 12vw, 110px);
+    height: auto;
+    padding-top: clamp(16px, 4vw, 32px);
+    padding-bottom: clamp(16px, 5vw, 40px);
+  }
+
+  .profile-orbit-mobile {
+    display: block;
+    width: 115%;
+    left: -10%;
+  }
+
+  .profile-container3 .profile-orbit-mobile {
+    top: 34%;
+  }
+
+  .profile-container4 .profile-orbit-mobile {
+    transform: rotate(-230deg);
+  }
+
   .profile-container3 {
-    top: 25%;
-    left: 5%;
-    width: clamp(130px, 22vw, 220px);
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(210px, 60vw, 300px);
   }
 
   .profile-container4 {
-    top: 48%;
-    left: 36%;
-    width: clamp(130px, 22vw, 220px);
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(210px, 60vw, 300px);
+  }
+
+  .profile-card-img-wrap {
+    width: 92%;
+  }
+
+  .about-text-container {
+    margin-top: clamp(24px, 7vw, 64px);
   }
 }
 
 /* ── Mobile ─────────────────────────────────────── */
 @media (max-width: 560px) {
   .about-container {
-    padding: 0 16px;
+    padding: clamp(24px, 8vw, 40px) 16px 0;
   }
 
   .profile-container3 {
-    top: 20%;
-    left: 3%;
-    width: 36vw;
+    width: min(78vw, 280px);
   }
 
   .profile-container4 {
-    top: 44%;
-    left: 34%;
-    width: 36vw;
+    width: min(78vw, 280px);
   }
 
   .about-text-container p {
@@ -510,15 +549,11 @@
 /* ── Small mobile ───────────────────────────────── */
 @media (max-width: 380px) {
   .profile-container3 {
-    top: 18%;
-    left: 2%;
-    width: 38vw;
+    width: min(82vw, 260px);
   }
 
   .profile-container4 {
-    top: 42%;
-    left: 32%;
-    width: 38vw;
+    width: min(82vw, 260px);
   }
 }
 
