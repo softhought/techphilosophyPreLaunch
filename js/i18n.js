@@ -28,6 +28,7 @@ const translations = {
     project_header_2: "in mind?",
     contact_header: "Drop us an email",
     contact_location: "Cologne, Germany",
+    copy_right: "All rights reserved © Tech Philosophy 2026",
   },
   de: {
     hero_top_text: "Unsere vollstaendige Website startet in Kuerze – fuer ein erstes Gespraech stehen wir Ihnen jedoch bereits heute gerne zur Verfuegung",
@@ -58,6 +59,7 @@ const translations = {
     project_header_2: "im Sinn?",
     contact_header: "Schreiben Sie uns",
     contact_location: "Köln, Deutschland",
+    copy_right: "Alle Rechte vorbehalten © Tech Philosophy 2026",
   },
 };
 
