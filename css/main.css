@@ -433,7 +433,7 @@ body {
 /* Central Vector */
 
 .central-vector-container {
-   position: relative;
+  position: relative;
   /* 60px gutter — mirrors the rest of the page */
   width: calc(100% - 120px);
   margin-left: 60px;
@@ -729,7 +729,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-left :clamp(16px, 4.5vw, 60px);
+  padding-left: clamp(16px, 4.5vw, 60px);
   box-sizing: border-box;
 }
 
@@ -751,7 +751,7 @@ body {
   order: 1;
 }
 
-.about-header{
+.about-header {
   padding-right: 60px;
 }
 
@@ -814,22 +814,6 @@ body {
   pointer-events: none;
   /* let SVG ball animation through */
 }
-.profile-orbit-mobile {
-  display: none;
-  position: absolute;
-  top: -12%;
-  left: -18%;
-  width: 136%;
-  transform: rotate(-180deg);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.profile-orbit-mobile svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 .profile-container3,
 .profile-container4 {
@@ -857,7 +841,7 @@ body {
 /* ── Card image + LinkedIn badge ────────────────── */
 .profile-card-img-wrap {
   position: relative;
-  width: 150%;
+  width: clamp(180px, 22vw, 420px);
   z-index: 1;
 }
 
@@ -873,8 +857,8 @@ body {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  width: clamp(24px, 2.8vw, 34px);
-  height: clamp(24px, 2.8vw, 34px);
+  width: clamp(34px, 4vw, 52px);
+  height: clamp(34px, 4vw, 52px);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.60);
   backdrop-filter: blur(15px);
@@ -891,8 +875,8 @@ body {
 }
 
 .linkedin-badge svg {
-  width: clamp(9px, 1vw, 14px);
-  height: clamp(9px, 1vw, 14px);
+  width: clamp(12px, 1.4vw, 18px);
+  height: clamp(12px, 1.4vw, 18px);
   display: block;
 }
 
@@ -1001,9 +985,8 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 0 60px;
   box-sizing: border-box;
-  height: 500px;
+  height: clamp(250px, 40vw, 650px);
 }
 
 .contact-text-container {
@@ -1121,20 +1104,66 @@ body {
   left: 60px;
   right: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .contact-language-option {
-  color: #23252A;
+  color: #4B4D51;
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 1.2vw, 16px);
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.32px;
 }
 
-.inactive {
-  opacity: 0.3;
+.contact-language-option-2 {
+  color: #4B4D51;
+  font-family: "Work Sans", sans-serif;
+  font-size: clamp(12px, 1.2vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.32px;
+  position: absolute;
+  right: 15%;
+}
+
+@media (max-width: 1600px) {
+  .contact-language-option-2 {
+    right: 15%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .contact-language-option-2 {
+    right: 12%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contact-language-option-2 {
+    right: 10%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .contact-language-option-2 {
+    right: 7%;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact-language-option-2 {
+    right: 0%;
+  }
+}
+
+
+.contact-svg {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
