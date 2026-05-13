@@ -5,45 +5,198 @@
    ========================================================= */
 
 /* Large laptops and small desktops: 1920px and below */
-@media (max-width: 3840px) {
+/* @media (max-width: 3840px) {
   .hero-orbit-wrapper {
-    position: relative;
-    width: 17%;
+    position: absolute;
+    width: 56%;
+    right: -3%;
   }
-}
+} */
 
 @media (max-width: 2560px) {
-  .hero-orbit-wrapper {
+   .hero-gardient {
+    height: 1100px;
+  }
+  .blur-orange {
+    top: 900px;
+  }
+   .hero-orbit-wrapper {
+    position: absolute;
+    width: 56%;
+    right: -3%;
+  }
+   .hero-image {
     position: relative;
-    width: 26%;
+    top: -158px;
+    left: -30px;
+    width: 700px;
+  }
+   .hero-title {
+    font-size: 85px;
+     margin-top: 40px;
+  }
+  .hero-title-2 {
+    font-size: 92px;
+    margin-top: 30px;
+  }
+  .hero-description {
+    font-size: 20px;
+    margin-top: 80px;
   }
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1850px) and (max-width: 1920px) {
   .hero-orbit-wrapper {
+    position: absolute;
+    width: 59%;
+    right: -3%;
+  }
+  .hero-gardient {
+    height: 1100px;
+  }
+  .blur-orange {
+    top: 900px;
+  }
+  .hero-image {
     position: relative;
-    width: 36%;
+    top: -158px;
+    left: -30px;
+    width: 700px;
+  }
+  .hero-title {
+    font-size: 78px;
+  }
+  .hero-title-2 {
+    font-size: 90px;
+    margin-top: 20px;
+  }
+  .hero-description {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .hero-content{
+    padding-top: 40px;
+  }
+   .hero-email {
+    margin-top: 61px;
+   }
+}
+
+@media (min-width: 1600px) and (max-width: 1849px) {
+  .hero-orbit-wrapper {
+    position: absolute;
+    width: 56%;
+    right: -3%;
+  }
+  .hero-gardient {
+    height: 1000px;
+  }
+  .blur-orange {
+    top: 800px;
+  }
+  .hero-image {
+    position: relative;
+    top: -158px;
+    left: -30px;
+    width: 600px;
+  }
+  .hero-title {
+    font-size: 75px;
+  }
+  .hero-title-2 {
+    font-size: 82px;
+    margin-top: 20px;
+  }
+  .hero-description {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .hero-content{
+    padding-top: 40px;
+  }
+   .hero-email {
+    margin-top: 61px;
+   }
+}
+
+@media (max-width: 1670px) {
+  .hero-orbit-wrapper {
+    position: absolute;
+    width: 54%;
+    right: -3%;
+  }
+   .hero-image {    
+    width: 600px;
+  }
+  .hero-title {
+    font-size: 74px;
+    margin-top: 20px;
+  }
+  .hero-title-2 {
+    font-size: 88px;
+    margin-top: 0px;
+  }
+   .hero-description {
+    font-size: 20px;
+    margin-top: 40px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1400px) and (max-width: 1440px) {
   .hero-orbit-wrapper {
-    position: relative;
-    width: 45%;
+    position: absolute;
+    width: 54%;
+    right: -3%;
   }
+   .hero-title {
+    font-size: 68px;
+  }
+  .hero-title-2 {
+    font-size: 78px;
+    margin-top: 10px;
+  }
+  .hero-description {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .hero-image {   
+    width: 550px;
+  }
+   .hero-gardient {
+    height: 900px;
+  }
+  .blur-orange {
+    top: 700px;
+  }
+  
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1280px) and (max-width: 1366px) {
   .hero-orbit-wrapper {
-    position: relative;
-    width: 48%;
+    position: absolute;
+    width: 54%;
+    right: -3%;
   }
-}
-
-@media (max-width: 1366px) {
-  .hero-orbit-wrapper {
-    position: relative;
-    width: 51%;
+   .hero-title {
+    font-size: 65px;
+  }
+  .hero-title-2 {
+    font-size: 75px;
+    margin-top: 10px;
+  }
+  .hero-description {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+   .hero-gardient {
+    height: 900px;
+  }
+  .blur-orange {
+    top: 700px;
+  }
+   .hero-image {
+    width: 450px;
+    top: -115px;
   }
 }
 
@@ -82,20 +235,8 @@
   .hero-email {
     margin-top: 2.125rem;
   }
-
-  .hero-image {
-    width: 26.25rem;
-    top: -7.5rem;
-    left: 12.5rem;
-  }
-
-  .hero-orbit-wrapper {
-    width: 60%;
-  }
-
-  .hero-orbit {
-    width: 140%;
-  }
+  
+ 
 }
 
 /* Compact laptops: 1152px and below */
@@ -117,19 +258,20 @@
   }
 
   .hero-title {
-    font-size: 3.125rem;
+    font-size: 3.1rem;
     letter-spacing: -0.0938rem;
   }
 
   .hero-title-2 {
     font-size: 3.625rem;
     letter-spacing: -0.125rem;
+    margin-top: 0px;
   }
 
   .hero-description {
     width: min(100%, 25.625rem);
     margin-top: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .hero-email {
@@ -143,24 +285,22 @@
   }
 
   .hero-image {
-    width: 24.375rem;
-    top: -7.5rem;
-    left: 11.25rem;
+     width: 450px;
   }
 
-  .hero-orbit-wrapper {
-    width: 60%;
-  }
-
-  .hero-orbit {
-    width: 140%;
-  }
+ 
 }
 
 /* Tablets landscape and small laptops: 1024px and below */
 @media (max-width: 1024px) {
   .hero {
     min-height: 40.625rem;
+  }
+  .hero-gardient {
+    height: 800px;
+  }
+  .blur-orange {
+    top: 600px;
   }
 
   .hero-top-text {
@@ -177,21 +317,23 @@
   }
 
   .hero-title {
-    font-size: 2.75rem;
-    line-height: 112%;
+    font-size: 2.45rem;
+    margin-top: 15px;
+    /* line-height: 112%; */
     letter-spacing: -0.0875rem;
   }
 
   .hero-title-2 {
-    font-size: 3.125rem;
-    line-height: 96%;
+    font-size: 2.9rem;
+     margin-top: 0px;
+    /* line-height: 96%; */
     letter-spacing: -0.1125rem;
   }
 
   .hero-description {
-    width: min(100%, 22.5rem);
+    width: min(100%, 22rem);
     margin-top: 1.375rem;
-    font-size: 0.9375rem;
+    font-size: 0.7375rem;
   }
 
   .hero-email {
@@ -205,24 +347,18 @@
     font-size: 0.9375rem;
   }
 
-  .hero-image {
-    width: 21.875rem;
-    top: -6.25rem;
-    left: 9.375rem;
+   .hero-orbit-wrapper {
+    position: absolute;
+    width: 52%;
+    right: -3%;
   }
-
-  .hero-orbit-wrapper {
-    width: 60%;
-  }
-
-  .hero-orbit {
-    width: 140%;
+   .hero-image {
+     width: 380px;
   }
 }
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
-
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -262,7 +398,7 @@
   .hero-content-wrapper {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 3.25rem;
+    gap: 4.25rem;
     padding-top: 0;
   }
 
@@ -271,40 +407,34 @@
   }
 
   .hero-title {
-    font-size: clamp(2.625rem, 8vw, 4rem);
+    font-size: clamp(2rem, 5vw, 2.5rem);
   }
 
   .hero-title-2 {
-    font-size: clamp(3rem, 9vw, 4.5rem);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    margin-top: 0px;
   }
 
   .hero-description {
-    width: min(100%, 35rem);
-    font-size: 1rem;
+    width: min(100%, 22rem);
+    font-size: 12px;
   }
 
-  .hero-orbit-wrapper {
-    width: 100%;
-    min-height: clamp(20rem, 58vw, 30rem);
+ .hero-orbit-wrapper {
+    position: absolute;
+    width: 54%;
+    right: -5%;
   }
-
-  .hero-orbit {
-    width: 125%;
-    top: 2.125rem;
-    left: -16%;
-  }
-
-  .hero-image {
-    width: clamp(17.5rem, 52vw, 26.25rem);
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+   .hero-image {
+    position: relative;
+    top: -90px;
+    left: -30px;
+     width: 350px;
   }
 }
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
-
   .hero,
   .curve-vector-container,
   .what-we-help-container,
@@ -368,7 +498,6 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
-
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -395,7 +524,6 @@
     font-size: 2.1875rem;
   }
 }
-
 
 /* ── Tablet ─────────────────────────────────────── */
 @media (max-width: 900px) {
@@ -464,12 +592,18 @@
   }
 }
 
-
 /* ── Tablet ─────────────────────────────────────── */
 @media (max-width: 900px) {
   .about-container {
     padding-top: clamp(24px, 6vw, 48px);
   }
+  .hero-gardient {
+    height: 700px;
+  }
+  .blur-orange {
+  
+  top: 500px;
+}
 
   .header-container2 {
     justify-content: flex-start;
@@ -525,6 +659,27 @@
 
   .about-text-container {
     margin-top: clamp(24px, 7vw, 64px);
+  }
+}
+@media (max-width: 800px) {
+.hero-orbit-wrapper {
+    position: absolute;
+    width: 54%;
+    right: -3%;
+  }
+   .hero-image {
+    position: relative;
+    top: -90px;
+    left: -30px;
+     width: 280px;
+  }
+   .hero-title {
+    font-size: 35px;
+  }
+
+  .hero-title-2 {
+    font-size: 42px;
+    margin-top: 0px;
   }
 }
 
