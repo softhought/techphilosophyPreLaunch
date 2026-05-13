@@ -33,7 +33,7 @@ const translations = {
   de: {
     hero_top_text: "Unsere vollstaendige Website startet in Kuerze – fuer ein erstes Gespraech stehen wir Ihnen jedoch bereits heute gerne zur Verfuegung",
     hero_title: "Tech Philosophy:",
-    hero_title_2: "Digitale Klarheit <br />für Ihr Unternehmen",
+    hero_title_2: "Digitale Klarheit <br />für Ihr Business",
     hero_description: "Wir unterstützen Unternehmen dabei, eine Vielzahl unübersichtlicher Tools, manuelle Arbeitsschritte und technische Unsicherheiten in praktische digitale Lösungen zu verwandeln, die den Geschäftsalltag erleichtern.",
     hero_email: "hello@techphistudio.de",
     hero_button: "Schreiben Sie uns",
@@ -88,12 +88,14 @@ function applyTranslations(lang) {
   const middleHeader2 = document.querySelector('.middle-header-2');
   const projectHeader1 = document.querySelector('.title-1');
   const projectHeader2 = document.querySelector('.title-2');
+  const heroTitle2 = document.querySelector('.hero-title-2');
 
   if (lang === 'de') {
     middleHeader1.style.fontSize = 'clamp(22px, 6vw, 100px)';
     middleHeader2.style.fontSize = 'clamp(26px, 6.8vw, 100px)';
     projectHeader1.style.fontSize = 'clamp(36px, 8vw, 120px)';
     projectHeader2.style.fontSize = 'clamp(36px, 8vw, 120px)';
+    // heroTitle2.style.fontSize = 'clamp(32px, 4.2vw, 80px)';
   }
 }
 
