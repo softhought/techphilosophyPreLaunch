@@ -200,7 +200,6 @@
   .blur-orange {
     top: 700px;
   }
-
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -273,8 +272,6 @@
   .hero-email {
     margin-top: 2.125rem;
   }
-
-
 }
 
 /* Compact laptops: 1152px and below */
@@ -325,8 +322,6 @@
   .hero-image {
     width: 450px;
   }
-
-
 }
 
 /* Tablets landscape and small laptops: 1024px and below */
@@ -400,7 +395,6 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
-
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -478,7 +472,6 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
-
   .hero,
   .curve-vector-container,
   .what-we-help-container,
@@ -541,7 +534,6 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
-
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -643,7 +635,6 @@
   }
 
   .blur-orange {
-
     top: 500px;
   }
 }
@@ -742,22 +733,22 @@
   }
 
   .hero-title {
-    font-size: 1.875rem;
+    font-size: 1.6rem;
     line-height: 1;
     letter-spacing: -0.025rem;
   }
 
   .hero-title-2 {
     max-width: 13.375rem;
-    font-size: 2.0625rem;
-    line-height: 0.92;
+    font-size: 1.8rem;
+    line-height: 1;
     letter-spacing: -0.0625rem;
   }
 
   .hero-description {
     width: min(100%, 14rem);
     margin-top: 0.875rem;
-    font-size: 0.6875rem;
+    font-size: 0.5rem;
     line-height: 1.45;
     letter-spacing: -0.0125rem;
   }
@@ -768,18 +759,52 @@
   }
 
   .hero-orbit {
-    width: 172%;
-    top: 0.8125rem;
-    left: -61%;
+    width: 118%;
+    top: -0.187rem;
+    left: 0%;
   }
 
   .hero-image {
-    width: min(82vw, 19.25rem);
-    top: -1.875rem;
-    left: 50%;
+    width: 175px;
+    top: -2.7rem;
+    left: 37%;
     transform: translateX(-50%);
+    height: 175px;
+  }
+  .hero-top-text {
+    font-size: 0.475rem;
   }
 
+  .hero-email {
+    font-size: 0.5rem;
+    margin-top: 1.00rem;
+  }
+
+  .hero-button {
+    width: 11.25rem;
+    padding: 0.4rem 0rem;
+    font-size: 0.5rem;
+    width: 100%;
+    max-width: 6.6rem;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .hero-gardient {
+    height: 500px;
+  }
+
+  .blur-orange {
+    top: 350px;
+  }
+  .hero-orbit-wrapper {
+    position: absolute;
+    width: 60%;
+    right: -3%;
+  }
+}
+
+@media (max-width: 480px) {
   .hero-top-text {
     position: absolute;
     top: 36rem;
@@ -826,9 +851,6 @@
     letter-spacing: -0.0125rem;
     z-index: 3;
   }
-}
-
-@media (max-width: 480px) {
   .about-container {
     padding-top: clamp(24px, 6vw, 48px);
   }
