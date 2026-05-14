@@ -55,7 +55,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 59%;
-    right: -6%;
+    right: -3%;
   }
 
   .hero-gardient {
@@ -100,7 +100,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 56%;
-    right: -6%;
+    right: -3%;
   }
 
   .hero-gardient {
@@ -145,7 +145,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -6%;
+    right: -3%;
   }
 
   .hero-image {
@@ -172,7 +172,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -6%;
+    right: -3%;
   }
 
   .hero-title {
@@ -200,13 +200,14 @@
   .blur-orange {
     top: 700px;
   }
+
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -6%;
+    right: -3%;
   }
 
   .hero-title {
@@ -272,6 +273,8 @@
   .hero-email {
     margin-top: 2.125rem;
   }
+
+
 }
 
 /* Compact laptops: 1152px and below */
@@ -322,6 +325,8 @@
   .hero-image {
     width: 450px;
   }
+
+
 }
 
 /* Tablets landscape and small laptops: 1024px and below */
@@ -385,7 +390,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 52%;
-    right: -6%;
+    right: -3%;
   }
 
   .hero-image {
@@ -395,6 +400,7 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
+
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -459,7 +465,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -8%;
+    right: -5%;
   }
 
   .hero-image {
@@ -472,6 +478,7 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
+
   .hero,
   .curve-vector-container,
   .what-we-help-container,
@@ -494,7 +501,7 @@
   .hero-top-text {
     max-width: 20rem;
     margin-bottom: 3rem;
-    font-size: 0.475rem;
+    font-size: 0.875rem;
   }
 
   .hero-title {
@@ -534,6 +541,7 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
+
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -635,6 +643,7 @@
   }
 
   .blur-orange {
+
     top: 500px;
   }
 }
@@ -643,15 +652,14 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -6%;
+    right: -3%;
   }
 
   .hero-image {
     position: relative;
-    top: -25px;
-    left: 0px;
-    width: 150px;
-    height: 150px;
+    top: -90px;
+    left: -30px;
+    width: 280px;
   }
 
   .hero-title {
@@ -719,6 +727,11 @@
     height: 2.285rem;
   }
 
+  .hero {
+    min-height: 45.75rem;
+    padding: 5.125rem 0.75rem 5.25rem;
+  }
+
   .hero-content-wrapper {
     gap: 0;
     padding-top: 0;
@@ -729,14 +742,14 @@
   }
 
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     line-height: 1;
     letter-spacing: -0.025rem;
   }
 
   .hero-title-2 {
     max-width: 13.375rem;
-    font-size: 1.9rem;
+    font-size: 2.0625rem;
     line-height: 0.92;
     letter-spacing: -0.0625rem;
   }
@@ -744,7 +757,7 @@
   .hero-description {
     width: min(100%, 14rem);
     margin-top: 0.875rem;
-    font-size: 0.488rem;
+    font-size: 0.6875rem;
     line-height: 1.45;
     letter-spacing: -0.0125rem;
   }
@@ -755,24 +768,18 @@
   }
 
   .hero-orbit {
-    width: 118%;
+    width: 172%;
     top: 0.8125rem;
-    left: -10%;
+    left: -61%;
   }
 
-  .hero-orbit {
-    width: 122%;
-    top: 0.8125rem;
-    left: -10%;
+  .hero-image {
+    width: min(82vw, 19.25rem);
+    top: -1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .hero-email {
-    margin-top: 1.75rem;
-    font-size: 0.5rem;
-  }
-}
-
-@media (max-width: 480px) {
   .hero-top-text {
     position: absolute;
     top: 36rem;
@@ -829,11 +836,20 @@
   .header-container2 {
     justify-content: flex-start;
   }
-}
 
-@media (min-width: 1701px) and (max-width: 1800px) {
-  .profile-card-img-wrap {
-    width: 140%;
+  .orbit-section {
+    display: none;
+  }
+
+  .profiles-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(56px, 12vw, 110px);
+    height: auto;
+    padding-top: clamp(16px, 4vw, 32px);
+    padding-bottom: clamp(16px, 5vw, 40px);
   }
 
   .profile-orbit-mobile {
@@ -845,26 +861,26 @@
   .profile-container3 .profile-orbit-mobile {
     top: 34%;
   }
-}
 
-@media (min-width: 1501px) and (max-width: 1600px) {
-  .profile-card-img-wrap {
-    width: 120%;
-  }
-}
-
-@media (min-width: 1301px) and (max-width: 1500px) {
-  .profile-card-img-wrap {
-    width: 110%;
-  }
-}
-
-@media (min-width: 1101px) and (max-width: 1300px) {
-  .profile-card-img-wrap {
-    width: 92%;
+  .profile-container4 .profile-orbit-mobile {
+    transform: scaleY(-1) rotate(0deg);
+    transform-origin: center;
   }
 
-@media (min-width: 901px) and (max-width: 1100px) {
+  .profile-container3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(210px, 60vw, 300px);
+  }
+
+  .profile-container4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(210px, 60vw, 300px);
+  }
+
   .profile-card-img-wrap {
     width: 92%;
   }
