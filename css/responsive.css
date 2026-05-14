@@ -473,8 +473,11 @@
 /* Phones: 560px and below */
 @media (max-width: 560px) {
   .hero,
+  .middle-header-container,
   .curve-vector-container,
   .what-we-help-container,
+  .about-container,
+  .project-header-container,
   .contact-container {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -529,6 +532,86 @@
   .hero-image {
     width: min(78vw, 20rem);
     top: -2.75rem;
+  }
+
+  .curve-vector-container > svg {
+    min-width: 48.75rem;
+    transform: translateX(-38%);
+  }
+
+  .curve-image-container {
+    left: 26%;
+    width: 6.875rem;
+  }
+
+  .central-vector-container {
+    width: calc(100% - 2rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .central-vector-text {
+    max-width: 78vw;
+    white-space: normal;
+  }
+
+  .what-we-help-header,
+  .what-we-help-header span {
+    font-size: 2.25rem;
+  }
+
+  .our-technologies {
+    height: 11.25rem;
+  }
+
+  .our-technologies-item {
+    padding: 0.5625rem 1.125rem 0.6875rem;
+    font-size: 0.9375rem;
+  }
+
+  .backend {
+    left: 58%;
+  }
+
+  .learn-about-text-container {
+    gap: 0.875rem;
+  }
+
+  .learn-about-text-container p {
+    font-size: 0.875rem;
+  }
+
+  .profile-container3 {
+    top: 20%;
+    left: 3%;
+    width: 36vw;
+  }
+
+  .profile-container4 {
+    top: 44%;
+    left: 34%;
+    width: 36vw;
+  }
+
+  .about-text-container p {
+    font-size: 1.25rem;
+  }
+
+  .project-header {
+    white-space: normal;
+  }
+
+  .email-container {
+    gap: 0.625rem;
+  }
+
+  .email-address {
+    font-size: clamp(1.25rem, 6vw, 2rem);
+  }
+
+  .curly-brace,
+  .curly-brace-2 {
+    font-size: 2rem;
   }
 }
 
@@ -777,7 +860,7 @@
 
   .hero-email {
     font-size: 0.5rem;
-    margin-top: 1.00rem;
+    margin-top: 1rem;
   }
 
   .hero-button {
@@ -790,17 +873,32 @@
     margin-top: 5px;
   }
 
-  .hero-gardient {
-    height: 500px;
+  .what-we-help-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
-  .blur-orange {
-    top: 350px;
+  .central-vector-container {
+    width: calc(100% - 2rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
-  .hero-orbit-wrapper {
-    position: absolute;
-    width: 60%;
-    right: -3%;
+
+  .contact-language-container {
+    left: 1rem;
+    right: 1rem;
+    flex-direction: column-reverse;
+    gap: 0.375rem;
+    text-align: center;
+  }
+
+  .contact-language-option,
+  .contact-language-option-2 {
+    margin: 0;
+  }
+
+  .contact-language-option-2 {
+    position: static;
   }
 }
 

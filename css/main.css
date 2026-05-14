@@ -33,12 +33,14 @@ body {
   width: 100%;
   height: 900px;
   z-index: 0;
-  background: linear-gradient(180deg,
-      #b8bec8 0%,
-      #dcdbde 51.57%,
-      #e7dad5 67.11%,
-      #f1cab9 84.79%,
-      #f5b799 100%);
+  background: linear-gradient(
+    180deg,
+    #b8bec8 0%,
+    #dcdbde 51.57%,
+    #e7dad5 67.11%,
+    #f1cab9 84.79%,
+    #f5b799 100%
+  );
 }
 
 .blur-orange {
@@ -60,7 +62,7 @@ body {
   height: 353px;
   z-index: 0;
   opacity: 0.6;
-  background: #FFB34F;
+  background: #ffb34f;
   filter: blur(142px);
 }
 
@@ -71,7 +73,7 @@ body {
   width: 200%;
   height: 808px;
   z-index: 0;
-  background: #74B4FA;
+  background: #74b4fa;
   filter: blur(142px);
 }
 
@@ -82,7 +84,7 @@ body {
   width: 200%;
   height: 505px;
   z-index: 0;
-  background: #B8BEC8;
+  background: #b8bec8;
   filter: blur(142px);
 }
 
@@ -94,7 +96,7 @@ body {
   height: 479px;
   z-index: 0;
   opacity: 0.6;
-  background: #FFB34F;
+  background: #ffb34f;
   filter: blur(142px);
 }
 
@@ -106,7 +108,7 @@ body {
   height: 353px;
   z-index: 0;
   opacity: 0.6;
-  background: #F9D5EA;
+  background: #f9d5ea;
   filter: blur(142px);
 }
 
@@ -118,7 +120,7 @@ body {
   height: 605px;
   z-index: 0;
   opacity: 0.6;
-  background: #F9D5EA;
+  background: #f9d5ea;
   filter: blur(142px);
 }
 
@@ -150,7 +152,7 @@ body {
 }
 
 .hero-top-text {
-  color: #23252A;
+  color: #23252a;
   font-family: "Ivar Text", serif;
   font-size: 16px;
   font-style: italic;
@@ -233,8 +235,10 @@ body {
 
   border-radius: 12px;
   border: none;
-  background: var(--Radial-orange,
-      radial-gradient(81.91% 49.83% at 50.17% 50%, #ff8d03 0%, #f60 100%));
+  background: var(
+    --Radial-orange,
+    radial-gradient(81.91% 49.83% at 50.17% 50%, #ff8d03 0%, #f60 100%)
+  );
 
   color: #fff;
   font-family: "Work Sans", sans-serif;
@@ -249,9 +253,8 @@ body {
 .hero-orbit-wrapper {
   position: relative;
   width: 60%;
-   display: flex;
+  display: flex;
   justify-content: center;
-
 }
 
 .hero-orbit {
@@ -267,7 +270,6 @@ body {
   top: -122px;
   left: -30px;
   width: 500px;
-
 }
 
 /* Middle Header Section */
@@ -469,10 +471,10 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.20);
-  background: rgba(255, 255, 255, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
-  color: #23252A;
+  color: #23252a;
   font-family: "Satoshi", sans-serif;
   font-size: clamp(14px, 2vw, 26px);
   font-weight: 500;
@@ -484,7 +486,7 @@ body {
 }
 
 .central-vector-span-text {
-  color: #23252A;
+  color: #23252a;
   font-family: "Ivar Text", serif;
   font-size: clamp(14px, 2vw, 26px);
   font-style: italic;
@@ -496,9 +498,10 @@ body {
 .vector-ellipse {
   width: clamp(8px, 1.1vw, 14px);
   height: clamp(8px, 1.1vw, 14px);
-  background: #F60;
+  background: #f60;
   box-shadow: 0 4px 3.5px 0 rgba(255, 255, 255, 0.25) inset;
-  filter: drop-shadow(0 9px 18.4px #EBA87B) drop-shadow(0 4px 4px rgba(255, 102, 0, 0.49));
+  filter: drop-shadow(0 9px 18.4px #eba87b)
+    drop-shadow(0 4px 4px rgba(255, 102, 0, 0.49));
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -524,7 +527,7 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   gap: 8px;
-  color: #23252A;
+  color: #23252a;
   text-align: right;
   font-family: "Satoshi", sans-serif;
   font-size: clamp(24px, 3.6vw, 48px);
@@ -539,7 +542,7 @@ body {
 }
 
 .central-vector-main-span-text {
-  color: #23252A;
+  color: #23252a;
   text-align: right;
   font-family: "Ivar Text", serif;
   font-size: clamp(24px, 3.6vw, 48px);
@@ -574,7 +577,7 @@ body {
 }
 
 .what-we-help-container-upper-text p {
-  color: #4B4D51;
+  color: #4b4d51;
   text-align: justify;
   font-family: "Work Sans", sans-serif;
   font-size: clamp(13px, 1.15vw, 16px);
@@ -591,7 +594,7 @@ body {
 }
 
 .what-we-help-header {
-  color: #23252A;
+  color: #23252a;
   font-family: "Satoshi", sans-serif;
   font-size: clamp(36px, 5.2vw, 68px);
   font-weight: 500;
@@ -602,7 +605,7 @@ body {
 }
 
 .what-we-help-header span {
-  color: #23252A;
+  color: #23252a;
   font-family: "Ivar Text", serif;
   font-size: clamp(36px, 5.2vw, 68px);
   font-style: italic;
@@ -628,15 +631,16 @@ body {
 
 .our-technologies-item {
   border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.20);
-  background: rgba(255, 255, 255, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   display: inline-flex;
-  padding: clamp(10px, 1.5vw, 20px) clamp(20px, 3.8vw, 50px) clamp(12px, 1.8vw, 24px);
+  padding: clamp(10px, 1.5vw, 20px) clamp(20px, 3.8vw, 50px)
+    clamp(12px, 1.8vw, 24px);
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #23252A;
+  color: #23252a;
   font-family: "Ivar Text", serif;
   font-size: clamp(14px, 2vw, 26px);
   font-style: italic;
@@ -687,9 +691,9 @@ body {
   margin: 0;
   width: 100%;
   opacity: 0.2;
-  background: #23252A;
+  background: #23252a;
   border: none;
-  border-top: 1px solid #23252A;
+  border-top: 1px solid #23252a;
 }
 
 .learn-about-text-container {
@@ -704,7 +708,9 @@ body {
   flex-shrink: 0;
   aspect-ratio: 1/1;
   background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 10.2px rgba(0, 0, 0, 0.07), inset 0 4px 4px rgba(235, 235, 235, 0.03);
+  box-shadow:
+    0 4px 10.2px rgba(0, 0, 0, 0.07),
+    inset 0 4px 4px rgba(235, 235, 235, 0.03);
   filter: drop-shadow(0 4px 10.2px rgba(0, 0, 0, 0.07));
   border-radius: 50%;
   display: flex;
@@ -718,7 +724,7 @@ body {
 }
 
 .learn-about-text-container p {
-  color: #4B4D51;
+  color: #4b4d51;
   font-family: "Work Sans", sans-serif;
   font-size: clamp(14px, 1.35vw, 18px);
   font-weight: 500;
@@ -832,8 +838,8 @@ body {
 
 /* Olga — top-left quadrant of the SVG */
 .profile-container3 {
-  top: 25%;
-  left: 10%;
+  top: 31%;
+  left: 14%;
 }
 
 /* Gourab — lower-right of centre */
@@ -864,9 +870,9 @@ body {
   width: clamp(34px, 4vw, 52px);
   height: clamp(34px, 4vw, 52px);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.60);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -932,7 +938,7 @@ body {
 }
 
 .about-text-container p {
-  color: #23252A;
+  color: #23252a;
   font-family: "Satoshi", sans-serif;
   font-size: clamp(22px, 3.2vw, 42px);
   font-weight: 500;
@@ -962,7 +968,7 @@ body {
   line-height: 100%;
   letter-spacing: clamp(-2px, -0.4vw, -6px);
   opacity: 0.4;
-  background: linear-gradient(90deg, #FFA631 5.34%, #3E3E3E 112.4%);
+  background: linear-gradient(90deg, #ffa631 5.34%, #3e3e3e 112.4%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1003,7 +1009,7 @@ body {
 }
 
 .contact-text-container p {
-  color: #4B4D51;
+  color: #4b4d51;
   text-align: center;
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
@@ -1032,7 +1038,7 @@ body {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  color: #23252A;
+  color: #23252a;
   font-family: "Ivar Text", serif;
   font-size: clamp(22px, 5.2vw, 68px);
   font-style: italic;
@@ -1049,7 +1055,7 @@ body {
   margin-top: -1px;
   transform: rotate(180deg);
   opacity: 0.2;
-  color: #4B4D51;
+  color: #4b4d51;
   font-family: "Satoshi", sans-serif;
   font-size: clamp(22px, 5.2vw, 68px);
   font-weight: 500;
@@ -1063,7 +1069,7 @@ body {
   width: fit-content;
   margin-top: -1px;
   opacity: 0.2;
-  color: #4B4D51;
+  color: #4b4d51;
   font-family: "Satoshi", sans-serif;
   font-size: clamp(22px, 5.2vw, 68px);
   font-weight: 500;
@@ -1084,7 +1090,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #FF6600 0%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(180deg, #ff6600 0%, rgba(255, 255, 255, 0) 50%);
   border-radius: 9999px;
   filter: blur(17.47px);
   pointer-events: none;
@@ -1096,7 +1102,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #FF925F 7.76%, rgba(233, 234, 236, 0.00) 51.46%);
+  background: linear-gradient(
+    180deg,
+    #ff925f 7.76%,
+    rgba(233, 234, 236, 0) 51.46%
+  );
   border-radius: 9999px;
   filter: blur(52.41023635864258px);
   pointer-events: none;
@@ -1113,7 +1123,7 @@ body {
 }
 
 .contact-language-option {
-  color: #4B4D51;
+  color: #4b4d51;
   font-family: "Work Sans", sans-serif;
   font-size: clamp(12px, 1.2vw, 16px);
   font-style: normal;
@@ -1123,7 +1133,7 @@ body {
 }
 
 .contact-language-option-2 {
-  color: #4B4D51;
+  color: #4b4d51;
   font-family: "Work Sans", sans-serif;
   font-size: clamp(12px, 1.2vw, 16px);
   font-style: normal;
@@ -1163,7 +1173,6 @@ body {
     right: 0%;
   }
 }
-
 
 .contact-svg {
   display: block;
