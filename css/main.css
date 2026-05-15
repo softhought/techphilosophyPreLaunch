@@ -856,7 +856,7 @@ body {
 /* ── Card image + LinkedIn badge ────────────────── */
 .profile-card-img-wrap {
   position: relative;
-  width: clamp(180px, 28vw, 420px);
+  width: clamp(150px, 25vw, 510px);
   z-index: 1;
 }
 
@@ -1002,7 +1002,7 @@ body {
   z-index: 1;
   width: 100%;
   box-sizing: border-box;
-  height: clamp(250px, 40vw, 650px);
+  height: clamp(340px, 38vw, 650px);
 }
 
 .contact-text-container {
