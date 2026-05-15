@@ -27,7 +27,7 @@ const translations = {
     project_header_1: "Have a project",
     project_header_2: "in mind?",
     contact_header: "Drop us an email",
-    contact_location: "Cologne, Germany",
+    contact_location: "Cologne",
     copy_right: "All rights reserved © Tech Philosophy 2026",
   },
   de: {
@@ -58,7 +58,7 @@ const translations = {
     project_header_1: "Haben Sie ein Projekt",
     project_header_2: "im Sinn?",
     contact_header: "Schreiben Sie uns",
-    contact_location: "Köln, Deutschland",
+    contact_location: "Köln",
     copy_right: "Alle Rechte vorbehalten © Tech Philosophy 2026",
   },
 };
