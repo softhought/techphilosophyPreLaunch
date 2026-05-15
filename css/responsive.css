@@ -714,11 +714,11 @@
 /* ── Tablet ─────────────────────────────────────── */
 @media (max-width: 900px) {
   .hero-gardient {
-    height: 700px;
+    height: 600px;
   }
 
   .blur-orange {
-    top: 500px;
+    top: 400px;
   }
 }
 
