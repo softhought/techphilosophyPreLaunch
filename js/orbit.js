@@ -16,6 +16,7 @@ function createOrbitAnimation({
   ball2Id,
   cacheKey,
   config,
+  startDelay = 0,
 }) {
   const {
     cx,
@@ -208,6 +209,12 @@ function createOrbitAnimation({
       time -= speed;
       animationId = requestAnimationFrame(loop);
     }
+
+    if (startDelay > 0) {
+      window.setTimeout(loop, startDelay);
+      return;
+    }
+
     loop();
   }
 
@@ -288,6 +295,7 @@ window.addEventListener("DOMContentLoaded", () => {
     ball1Id: "ball1",
     ball2Id: "ball2",
     cacheKey: "orbitBoundsHeroV2",
+    startDelay: 920,
   });
 
   createOrbitAnimation({

@@ -183,6 +183,9 @@ body {
   line-height: 116%;
   letter-spacing: -2.04px;
   margin: 0;
+  opacity: 0;
+  translate: -48px 0;
+  animation: heroTextRevealLeft 0.6s ease-out 1.9s forwards;
 }
 
 .hero-title-2 {
@@ -194,6 +197,9 @@ body {
   line-height: 100%;
   letter-spacing: -2.4px;
   margin: 0;
+  opacity: 0;
+  translate: -48px 0;
+  animation: heroTextRevealLeft 0.6s ease-out 1.9s forwards;
 }
 
 .hero-description {
@@ -208,6 +214,9 @@ body {
   margin-top: 30px;
   margin-bottom: 0;
   width: 571px;
+  opacity: 0;
+  translate: -48px 0;
+  animation: heroTextRevealLeft 0.6s ease-out 2.15s forwards;
 }
 
 .hero-email {
@@ -222,6 +231,9 @@ body {
 
   margin-top: 41px;
   margin-bottom: 0;
+  opacity: 0;
+  translate: -48px 0;
+  animation: heroTextRevealLeft 0.6s ease-out 2.35s forwards;
 }
 
 .hero-button {
@@ -248,6 +260,9 @@ body {
   line-height: 140%;
   letter-spacing: -0.32px;
   text-decoration: none;
+  opacity: 0;
+  translate: -48px 0;
+  animation: heroTextRevealLeft 0.6s ease-out 2.55s forwards;
 }
 
 .hero-orbit-wrapper {
@@ -265,11 +280,86 @@ body {
   top: 0;
 }
 
+#orbitPath1,
+#orbitPath2 {
+  opacity: 0;
+  animation: heroOrbitPathReveal 0.8s ease-out 0.1s forwards;
+}
+
+#ball1,
+#ball2 {
+  transition: opacity 0.38s ease-out;
+}
+
 .hero-image {
   position: relative;
   top: -122px;
   left: -30px;
   width: 500px;
+  opacity: 0;
+  translate: 0 48px;
+  animation: heroImageReveal 0.7s ease-out 1.15s forwards;
+}
+
+@keyframes heroOrbitPathReveal {
+  from {
+    opacity: 0;
+    filter: blur(16px);
+  }
+
+  to {
+    opacity: 0.2;
+    filter: blur(0);
+  }
+}
+
+@keyframes heroImageReveal {
+  from {
+    opacity: 0;
+    filter: blur(18px);
+    translate: 0 48px;
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    translate: 0 0;
+  }
+}
+
+@keyframes heroTextRevealLeft {
+  from {
+    opacity: 0;
+    translate: -48px 0;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ball1,
+  #ball2,
+  .hero-image,
+  .hero-title,
+  .hero-title-2,
+  .hero-description,
+  .hero-email,
+  .hero-button {
+    opacity: 1;
+    animation: none;
+    filter: none;
+    translate: 0 0;
+  }
+
+  #orbitPath1,
+  #orbitPath2 {
+    opacity: 0.2;
+    animation: none;
+    filter: none;
+  }
 }
 
 /* Middle Header Section */
