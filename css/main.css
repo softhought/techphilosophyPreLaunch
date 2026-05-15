@@ -464,7 +464,8 @@ body {
   position: absolute;
   top: clamp(-110px, -24vw, -84px);
   /* right: clamp(20px, 16vw, 270px); */
-  right: calc(27% + 38 * ((100vw - 1920px) / 604));
+  /* right: calc(27% + 38 * ((100vw - 1920px) / 604)); */
+  left: 50%;
 }
 
 .curve-text {
@@ -666,7 +667,8 @@ body {
   gap: clamp(16px, 3vw, 40px);
   position: absolute;
   top: 10%;
-  right: calc(27% + 38 * ((100vw - 1920px) / 604));
+  /* right: calc(27% + 38 * ((100vw - 1920px) / 604)); */
+  left: 50%;
 }
 
 .what-we-help-container-upper-text p {
@@ -933,7 +935,7 @@ body {
 
 /* Olga — top-left quadrant of the SVG */
 .profile-container3 {
-  top: 14%;  
+  top: 14%;
   left: -3%;
 }
 
@@ -951,8 +953,8 @@ body {
 }
 
 .profile-image-container {
- width: clamp(150px, 29vw, 510px);
-  
+  width: clamp(150px, 29vw, 510px);
+
   height: auto;
   object-fit: cover;
   display: block;
