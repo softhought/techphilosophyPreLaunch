@@ -348,7 +348,7 @@ body {
   position: relative;
   box-sizing: border-box;
   z-index: 1;
-  margin-top: clamp(60px, 14vw, 192px);
+  margin-top: clamp(60px, 22vw, 192px);
   width: 100%;
   /* height: clamp(200px, 22vw, 300px); */
 }
@@ -372,15 +372,16 @@ body {
   align-items: flex-start;
   gap: clamp(16px, 3vw, 40px);
   position: absolute;
-  top: clamp(-80px, -6vw, -80px);
-  right: clamp(20px, 16vw, 270px);
+  top: clamp(-110px, -24vw, -84px);
+  /* right: clamp(20px, 16vw, 270px); */
+  right: calc(28% + 38 * ((100vw - 1920px) / 604));
 }
 
 .curve-text {
   color: #4b4d51;
   text-align: justify;
   font-family: "Work Sans", sans-serif;
-  font-size: clamp(13px, 1.15vw, 16px);
+  font-size: clamp(11px, 1.35vw, 17px);
   font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.02em;
@@ -561,12 +562,13 @@ body {
   z-index: 1;
   width: 100%;
   height: auto;
-  min-height: clamp(600px, 80vw, 1049px);
+  min-height: clamp(600px, 95vw, 1049px);
   padding: 0 clamp(16px, 4.5vw, 60px);
 }
 
 .what-we-help-container-upper-text {
-  width: clamp(260px, 33vw, 445px);
+  /* width: clamp(260px, 33vw, 445px); */
+  width: clamp(150px, 48vw, 440px);
   height: auto;
   display: inline-flex;
   flex-direction: column;
@@ -574,7 +576,7 @@ body {
   gap: clamp(16px, 3vw, 40px);
   position: absolute;
   top: 10%;
-  right: clamp(20px, 20vw, 270px);
+  right: calc(28% + 38 * ((100vw - 1920px) / 604));
 }
 
 .what-we-help-container-upper-text p {
@@ -727,7 +729,7 @@ body {
 .learn-about-text-container p {
   color: #4b4d51;
   font-family: "Work Sans", sans-serif;
-  font-size: clamp(14px, 1.35vw, 18px);
+  font-size: clamp(10px, 1.35vw, 22px);
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.02em;
@@ -937,7 +939,7 @@ body {
   position: relative;
   width: 80%;
   /* max-width: clamp(280px, 82vw, 1088px); */
-  margin-top: clamp(450px, 4vw, 60px);
+  margin-top: clamp(200px, 38vw, 450px);
   padding-bottom: clamp(40px, 5vw, 80px);
 }
 
