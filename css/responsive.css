@@ -9,7 +9,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 56%;
-    right: -3%;
+    right: -6%;
   }
 } */
 
@@ -25,7 +25,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 56%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-image {
@@ -55,7 +55,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 59%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-gardient {
@@ -100,7 +100,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 56%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-gardient {
@@ -145,7 +145,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-image {
@@ -172,7 +172,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-title {
@@ -206,7 +206,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-title {
@@ -385,7 +385,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 52%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-image {
@@ -726,7 +726,7 @@
   .hero-orbit-wrapper {
     position: absolute;
     width: 54%;
-    right: -3%;
+    right: -6%;
   }
 
   .hero-image {
@@ -748,13 +748,13 @@
 
 /* ── Tablet: curve + central vector ───────────── */
 @media (max-width: 900px) {
-  .curve-vector-container {
+  /* .curve-vector-container {
     margin-top: clamp(40px, 10vw, 100px);
-  }
+  } */
 
   .curve-text-container {
-    position: static;
-    width: calc(100% - 48px);
+    /* position: static; */
+    /* width: calc(100% - 48px); */
     margin: clamp(16px, 3vw, 24px) 24px 0;
   }
 

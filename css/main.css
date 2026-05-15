@@ -366,7 +366,8 @@ body {
 
 .curve-text-container {
   display: flex;
-  width: clamp(260px, 33vw, 445px);
+  /* width: clamp(260px, 33vw, 445px); */
+  width: clamp(150px, 40vw, 440px);
   flex-direction: column;
   align-items: flex-start;
   gap: clamp(16px, 3vw, 40px);
@@ -819,15 +820,17 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 80%;
   height: 100%;
   pointer-events: none;
+  display: flex;
+  justify-content: space-around;
   /* let SVG ball animation through */
 }
 
 .profile-container3,
 .profile-container4 {
-  position: absolute;
+  position: relative;
   pointer-events: all;
   display: flex;
   flex-direction: column;
@@ -838,14 +841,14 @@ body {
 
 /* Olga — top-left quadrant of the SVG */
 .profile-container3 {
-  top: 14%;
-  left: 6.5%;
+  top: 14%;  
+  left: -3%;
 }
 
 /* Gourab — lower-right of centre */
 .profile-container4 {
   top: 60%;
-  left: 46%;
+  /* left: 46%; */
 }
 
 /* ── Card image + LinkedIn badge ────────────────── */
@@ -856,8 +859,8 @@ body {
 }
 
 .profile-image-container {
-  width: 420px;
-  height: 593px;
+ width: clamp(150px, 29vw, 510px);
+  
   height: auto;
   object-fit: cover;
   display: block;
@@ -932,8 +935,8 @@ body {
 .about-text-container {
   order: 3;
   position: relative;
-  width: 100%;
-  max-width: clamp(280px, 82vw, 1088px);
+  width: 80%;
+  /* max-width: clamp(280px, 82vw, 1088px); */
   margin-top: clamp(450px, 4vw, 60px);
   padding-bottom: clamp(40px, 5vw, 80px);
 }
@@ -941,7 +944,7 @@ body {
 .about-text-container p {
   color: #23252a;
   font-family: "Satoshi", sans-serif;
-  font-size: clamp(22px, 3.2vw, 42px);
+  font-size: clamp(5px, 2.9vw, 58px);
   font-weight: 500;
   line-height: 110%;
   letter-spacing: -0.02em;
