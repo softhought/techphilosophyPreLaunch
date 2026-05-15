@@ -946,7 +946,7 @@ body {
 /* ── Card image + LinkedIn badge ────────────────── */
 .profile-card-img-wrap {
   position: relative;
-  width: clamp(150px, 25vw, 510px);
+  width: clamp(150px, 28vw, 500px);
   z-index: 1;
 }
 
