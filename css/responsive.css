@@ -30,7 +30,7 @@
 
   .hero-image {
     position: relative;
-    top: -158px;
+    top: -140px;
     left: -30px;
     width: 700px;
   }
@@ -153,12 +153,12 @@
   }
 
   .hero-title {
-    font-size: 74px;
+    font-size: 66px;
     margin-top: 20px;
   }
 
   .hero-title-2 {
-    font-size: 88px;
+    font-size: 80px;
     margin-top: 0px;
   }
 
