@@ -15,11 +15,11 @@
 
 @media (max-width: 2560px) {
   .hero-gardient {
-    height: 1100px;
+    height: 900px;
   }
 
   .blur-orange {
-    top: 900px;
+    top: 700px;
   }
 
   .hero-orbit-wrapper {
