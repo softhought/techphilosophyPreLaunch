@@ -1148,3 +1148,130 @@
     height: clamp(260px, 42vw, 420px);
   }
 }
+
+/* Responsive for Mobile Screen */
+@media (max-width: 375px) {
+  .hero-orbit-wrapper {
+    position: absolute;
+    width: 120%;
+    right: 18%;
+  }
+
+  .hero-orbit-wrapper {
+    min-height: 17.5rem;
+    margin-top: 25.375rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -0.025rem;
+  }
+
+  .hero-title-2 {
+    max-width: 16.375rem;
+    font-size: 2.8rem;
+    line-height: 1;
+    letter-spacing: -0.0625rem;
+  }
+
+  .hero-description {
+    width: min(100%, 16rem);
+    margin-top: 0.875rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    letter-spacing: -0.0125rem;
+  }
+
+  .hero-image {
+    width: 325px;
+    top: -6.7rem;
+    left: 62%;
+    transform: translateX(-50%);
+    height: 325px;
+  }
+
+  .hero-gardient {
+    height: 800px;
+  }
+
+  .blur-orange {
+    top: 700px;
+  }
+
+  .hero-top-text {
+    position: absolute;
+    top: 50rem;
+    right: auto;
+    left: 50%;
+    width: min(15.25rem, calc(100vw - 3rem));
+    max-width: none;
+    margin: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    letter-spacing: -0.0125rem;
+    z-index: 3;
+  }
+
+  .hero-email {
+    position: absolute;
+    top: 53.25rem;
+    right: 0;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: -0.0125rem;
+    z-index: 3;
+  }
+
+  .hero-button {
+    position: absolute;
+    top: 55rem;
+    left: 50%;
+    box-sizing: border-box;
+    width: 10.75rem;
+    max-width: none;
+    min-height: 3rem;
+    margin: 0;
+    padding: 0.875rem 1rem;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.0125rem;
+    z-index: 3;
+  }
+
+  .middle-header-container {
+    padding-top: 12rem;
+  }
+
+  .blur-orange {
+    top: 600px;
+  }
+
+  .middle-header-1,
+  .middle-header-2 {
+    font-size: clamp(1.625rem, 13vw, 5rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .curve-media {
+    position: relative;
+    width: 70rem;
+    transform: rotate(15deg);
+    left: -40%;
+  }
+
+  .curve-image-container {
+    left: 24%;
+    width: 9.875rem;
+    transform: rotate(-15deg);
+    top: 12%;
+  }
+}
