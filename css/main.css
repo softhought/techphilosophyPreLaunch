@@ -933,6 +933,16 @@ body {
   width: clamp(140px, 20vw, 290px);
 }
 
+.profile-orbit-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: none;
+  pointer-events: none;
+}
+
 /* Olga — top-left quadrant of the SVG */
 .profile-container3 {
   top: 14%;
