@@ -42,6 +42,8 @@ function createOrbitAnimation({
   let animationId = null;
   let time = initialTime;
   const narrowStates = new WeakMap();
+  const ballStates = new WeakMap(); // Track ready state per ball
+  let frameCount = 0;
 
   function isVisibleBound(bounds) {
     return bounds.min !== Infinity && bounds.max - bounds.min > minGapWidth;
@@ -166,8 +168,6 @@ function createOrbitAnimation({
     }
 
     if (bounds.min !== Infinity && gapWidth > minGapWidth) {
-      ballGroup.style.opacity = 1;
-
       let trackRadius = (bounds.min + bounds.max) / 2;
       let ballRadius = gapWidth / 3;
 
@@ -198,9 +198,18 @@ function createOrbitAnimation({
       const finalRadius = ballRadius * ballSizeMultiplier;
       core?.setAttribute("r", finalRadius);
       ring?.setAttribute("r", Math.max(finalRadius - 0.5, 0.5));
+
+      // Control visibility based on frameCount - let animation settle before showing
+      if (frameCount > 120) {
+        ballStates.set(ballGroup, { ready: true });
+        ballGroup.style.opacity = 1;
+      }
     } else {
       narrowStates.delete(ballGroup);
-      ballGroup.style.opacity = 0;
+      const state = ballStates.get(ballGroup);
+      if (!state?.ready && frameCount > 120) {
+        ballGroup.style.opacity = 0;
+      }
     }
   }
 
@@ -209,6 +218,7 @@ function createOrbitAnimation({
       updateBall(ball1, time);
       updateBall(ball2, time + Math.PI);
       time -= speed;
+      frameCount++;
       animationId = requestAnimationFrame(loop);
     }
 
