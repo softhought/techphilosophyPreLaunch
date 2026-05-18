@@ -1274,4 +1274,31 @@
     transform: rotate(-15deg);
     top: 12%;
   }
+
+  .curve-text-container {
+    display: flex;
+    width: clamp(260px, 33vw, 445px);
+    width: clamp(150px, 93vw, 340px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(16px, 3vw, 40px);
+    position: absolute;
+    top: clamp(-110px, 60vw, 225px);
+    right: clamp(20px, 16vw, 270px);
+    right: calc(27% + 38 * ((100vw - 1920px) / 604));
+    left: 5%;
+    right: 5%;
+  }
+
+  .curve-vector-container::before {
+    top: clamp(-10px, 60vw, 200px);
+    height: clamp(220px, 34vw, 300px);
+  }
+
+  .central-vector-container {
+    width: calc(100% - 2rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 14rem;
+  }
 }
