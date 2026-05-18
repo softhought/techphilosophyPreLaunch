@@ -27,6 +27,7 @@ function createOrbitAnimation({
     angleTilt,
     initialTime,
     speed,
+    ballSizeMultiplier = 1,
   } = { ...ORBIT_CONFIG, ...config };
 
   const maxAngles = 360 * resolution;
@@ -194,8 +195,9 @@ function createOrbitAnimation({
       const core = ballGroup.querySelector(".core");
       const ring = ballGroup.querySelector(".ring");
 
-      core?.setAttribute("r", ballRadius);
-      ring?.setAttribute("r", Math.max(ballRadius - 0.5, 0.5));
+      const finalRadius = ballRadius * ballSizeMultiplier;
+      core?.setAttribute("r", finalRadius);
+      ring?.setAttribute("r", Math.max(finalRadius - 0.5, 0.5));
     } else {
       narrowStates.delete(ballGroup);
       ballGroup.style.opacity = 0;
@@ -312,6 +314,24 @@ window.addEventListener("DOMContentLoaded", () => {
     ball1Id: "ball1About",
     ball2Id: "ball2About",
     cacheKey: "orbitBoundsAboutV2",
+  });
+
+  createOrbitAnimation({
+    path1Id: "orbitPath1Mobile",
+    path2Id: "orbitPath2Mobile",
+    ball1Id: "ball1Mobile",
+    ball2Id: "ball2Mobile",
+    cacheKey: "orbitBoundsMobileV1",
+    config: { cx: 177, cy: 125, a: 165, b: 110, angleTilt: 2 * (Math.PI / 180), ballSizeMultiplier: 1.6 },
+  });
+
+  createOrbitAnimation({
+    path1Id: "orbitPath1Mobile2",
+    path2Id: "orbitPath2Mobile2",
+    ball1Id: "ball1Mobile2",
+    ball2Id: "ball2Mobile2",
+    cacheKey: "orbitBoundsMobile2V1",
+    config: { cx: 177, cy: 125, a: 165, b: 110, angleTilt: 2 * (Math.PI / 180), ballSizeMultiplier: 1.6 },
   });
 
   initCurveBall();
