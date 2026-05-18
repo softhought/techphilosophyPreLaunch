@@ -1075,8 +1075,8 @@
   }
 }
 
-/* Responsive for Mobile Screen */
-@media (max-width: 375px) {
+/* Responsive for larger mobile screens */
+@media (max-width: 420px) {
   .hero-orbit-wrapper {
     position: absolute;
     width: 120%;
@@ -1185,7 +1185,7 @@
     padding: 0.875rem 1rem;
     transform: translateX(-50%);
     border-radius: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 16px;
     line-height: 1.2;
     letter-spacing: -0.0125rem;
     z-index: 3;
@@ -1444,6 +1444,9 @@
 
 /* ── About container: 375px and below ────────────── */
 @media (max-width: 375px) {
+  .language-option {
+    font-size: 16px;
+  }
   .about-container {
     padding-top: clamp(20px, 5vw, 40px);
     padding-left: 1rem;
@@ -1708,5 +1711,286 @@
   .contact-container::before {
     bottom: -100px;
     height: clamp(260px, 100vw, 525px);
+  }
+  .text-2 {
+    right: 2%;
+    top: 245%;
+  }
+}
+
+/* ── About container: 375px and below ────────────── */
+@media (max-width: 420px) {
+  .language-option {
+    font-size: 16px;
+  }
+  .about-container {
+    padding-top: clamp(20px, 5vw, 40px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header-container2 {
+    justify-content: flex-start;
+  }
+
+  .about-header {
+    padding-right: 0;
+  }
+
+  .header-title,
+  .header-title2 {
+    font-size: clamp(20px, 6vw, 28px);
+    line-height: 1.18;
+  }
+
+  .orbit-section {
+    display: none;
+  }
+
+  /* Stacked vertical profile cards */
+  .profiles-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .profile-container3,
+  .profile-container4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    overflow: visible;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Orbit SVG curves behind each card */
+  .profile-orbit-mobile {
+    display: block;
+    position: absolute;
+    width: 95vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 1;
+  }
+
+  .profile-container3 .profile-orbit-mobile {
+    top: 32%;
+  }
+
+  .profile-container4 .profile-orbit-mobile {
+    transform: translateX(-50%);
+    transform-origin: center;
+    top: -10%;
+  }
+
+  /* Photo card */
+  .profile-card-img-wrap {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .profile-image-container {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+  }
+
+  .linkedin-badge {
+    position: absolute;
+    bottom: 14px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .linkedin-badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Name + role */
+  .profile-info-container {
+    z-index: 1;
+    position: relative;
+    padding-left: 2px;
+  }
+
+  .profile-info3 {
+    gap: 4px;
+  }
+
+  .mission-title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .profile-role {
+    font-size: 12px;
+    color: #757677;
+  }
+
+  /* Quote */
+  .about-text-container {
+    margin-top: 28px;
+    width: 100%;
+    padding-bottom: 28px;
+  }
+
+  .about-text-container p {
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+  }
+
+  .curve-highlight {
+    font-size: clamp(18px, 2vw, 26px);
+  }
+
+  .central-vector-text {
+    font-size: clamp(14px, 7vw, 26px);
+  }
+
+  .central-vector-span-text {
+    font-size: clamp(14px, 7vw, 26px);
+  }
+
+  .what-we-help-container-upper-text p {
+    color: var(--Gray-text, #4b4d51);
+    text-align: justify;
+
+    /* 📱Body/B2-Regular */
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+  }
+
+  .header-title {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H2-Medium */
+    font-family: Satoshi;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 46.4px */
+    letter-spacing: -0.8px;
+  }
+
+  .header-title2 {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H2-Italic */
+    font-family: "Ivar Text";
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 116%; /* 46.4px */
+    letter-spacing: -1.2px;
+    text-align: right;
+    margin-top: -12%;
+  }
+
+  .about-text-container p {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H3-Medium */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 27.84px */
+    letter-spacing: -0.48px;
+  }
+
+  .mission-title {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H3-Medium */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 27.84px */
+    letter-spacing: -0.48px;
+  }
+
+  .profile-role {
+    color: var(--Light-gray-text, #757677);
+
+    /* 📱Body/B2-Italic */
+    font-family: "Ivar Text";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+  }
+
+  .project-header-container {
+    height: clamp(220px, 68vw, 505px);
+  }
+
+  .contact-text-container {
+    height: clamp(220px, 68vw, 505px);
+  }
+
+  .project-header-container::before {
+    top: 0;
+    height: clamp(220px, 100vw, 400px);
+  }
+
+  .footer-svg {
+    width: 450px;
+    height: 500px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .contact-container {
+    height: clamp(340px, 140vw, 700px);
+  }
+
+  .contact-container::before {
+    bottom: -100px;
+    height: clamp(260px, 100vw, 525px);
+  }
+
+  .text-2 {
+    right: 2%;
+    top: 250%;
   }
 }
