@@ -1695,9 +1695,18 @@
   }
 
   .footer-svg {
-    width: 380px;
+    width: 450px;
     height: 500px;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .contact-container {
+    height: clamp(340px, 140vw, 700px);
+  }
+
+  .contact-container::before {
+    bottom: -100px;
+    height: clamp(260px, 100vw, 525px);
   }
 }
