@@ -1680,4 +1680,17 @@
     line-height: 140%; /* 22.4px */
     letter-spacing: -0.32px;
   }
+
+  .project-header-container {
+    height: clamp(220px, 68vw, 505px);
+  }
+
+  .contact-text-container {
+    height: clamp(220px, 68vw, 505px);
+  }
+
+  .project-header-container::before {
+    top: 0;
+    height: clamp(220px, 100vw, 400px);
+  }
 }
