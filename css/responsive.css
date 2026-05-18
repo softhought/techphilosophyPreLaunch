@@ -395,6 +395,7 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
+
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -472,6 +473,7 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
+
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -534,7 +536,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container > svg {
+  .curve-vector-container>svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -581,22 +583,6 @@
     font-size: 0.875rem;
   }
 
-  .profile-container3 {
-    top: 20%;
-    left: 3%;
-    width: 36vw;
-  }
-
-  .profile-container4 {
-    top: 44%;
-    left: 34%;
-    width: 36vw;
-  }
-
-  .about-text-container p {
-    font-size: 1.25rem;
-  }
-
   .project-header {
     white-space: normal;
   }
@@ -617,6 +603,7 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
+
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -950,82 +937,17 @@
     z-index: 3;
   }
 
-  .about-container {
-    padding-top: clamp(24px, 6vw, 48px);
-  }
-
-  .header-container2 {
-    justify-content: flex-start;
-  }
-
-  .orbit-section {
-    display: none;
-  }
-
-  .profiles-row {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: clamp(56px, 12vw, 110px);
-    height: auto;
-    padding-top: clamp(16px, 4vw, 32px);
-    padding-bottom: clamp(16px, 5vw, 40px);
-  }
-
-  .profile-orbit-mobile {
-    display: block;
-    width: 115%;
-    left: -10%;
-  }
-
-  .profile-container3 .profile-orbit-mobile {
-    top: 34%;
-  }
-
-  .profile-container4 .profile-orbit-mobile {
-    transform: scaleY(-1) rotate(0deg);
-    transform-origin: center;
-  }
-
-  .profile-container3 {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: clamp(210px, 60vw, 300px);
-  }
-
-  .profile-container4 {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: clamp(210px, 60vw, 300px);
-  }
-
-  .profile-card-img-wrap {
-    width: 92%;
-  }
-
-  .about-text-container {
-    margin-top: clamp(24px, 7vw, 64px);
-  }
 }
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(
-      900px,
-      calc(900px + (1440px - 100vw) * 0.42),
-      1180px
-    );
-    --blur-orange-top: calc(
-      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
-    );
-    --blur-orange-height: clamp(
-      400px,
-      calc(400px + (1440px - 100vw) * 0.08),
-      460px
-    );
+    --hero-gradient-height: clamp(900px,
+        calc(900px + (1440px - 100vw) * 0.42),
+        1180px);
+    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
+    --blur-orange-height: clamp(400px,
+        calc(400px + (1440px - 100vw) * 0.08),
+        460px);
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -1352,6 +1274,7 @@
     right: 5%;
     top: 30%;
   }
+
   .what-we-help-container-lower {
     flex-direction: column;
     align-items: center;
@@ -1424,6 +1347,8 @@
   .about-container {
     padding-top: clamp(24px, 6vw, 48px);
     padding-bottom: clamp(24px, 100vw, 375px);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .project-header {
@@ -1441,5 +1366,158 @@
     -webkit-text-fill-color: transparent;
     margin: 0;
     padding-right: 0.12em;
+  }
+}
+
+/* ── About container: 375px and below ────────────── */
+@media (max-width: 375px) {
+  .about-container {
+    padding-top: clamp(20px, 5vw, 40px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header-container2 {
+    justify-content: flex-start;
+  }
+
+  .about-header {
+    padding-right: 0;
+  }
+
+  .header-title,
+  .header-title2 {
+    font-size: clamp(20px, 6vw, 28px);
+    line-height: 1.18;
+  }
+
+  .orbit-section {
+    display: none;
+  }
+
+  /* Stacked vertical profile cards */
+  .profiles-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .profile-container3,
+  .profile-container4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    overflow: visible;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Orbit SVG curves behind each card */
+  .profile-orbit-mobile {
+    display: block;
+    position: absolute;
+    width: 95vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 1;
+  }
+
+  .profile-container3 .profile-orbit-mobile {
+    top: 32%;
+  }
+
+  .profile-container4 .profile-orbit-mobile {
+    transform: translateX(-50%) ;
+    transform-origin: center;
+    top: -10%;
+  }
+
+  /* Photo card */
+  .profile-card-img-wrap {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .profile-image-container {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+  }
+
+  .linkedin-badge {
+    position: absolute;
+    bottom: 14px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .linkedin-badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Name + role */
+  .profile-info-container {
+    z-index: 1;
+    position: relative;
+    padding-left: 2px;
+  }
+
+  .profile-info3 {
+    gap: 4px;
+  }
+
+  .mission-title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .profile-role {
+    font-size: 12px;
+    color: #757677;
+  }
+
+  /* Quote */
+  .about-text-container {
+    margin-top: 28px;
+    width: 100%;
+    padding-bottom: 28px;
+  }
+
+  .about-text-container p {
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: 1.45;
+    letter-spacing: -0.02em;
   }
 }
