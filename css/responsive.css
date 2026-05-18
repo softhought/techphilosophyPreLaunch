@@ -395,7 +395,6 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
-
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -473,7 +472,6 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
-
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -536,7 +534,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container>svg {
+  .curve-vector-container > svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -619,7 +617,6 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
-
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -1016,13 +1013,19 @@
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(900px,
-        calc(900px + (1440px - 100vw) * 0.42),
-        1180px);
-    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
-    --blur-orange-height: clamp(400px,
-        calc(400px + (1440px - 100vw) * 0.08),
-        460px);
+    --hero-gradient-height: clamp(
+      900px,
+      calc(900px + (1440px - 100vw) * 0.42),
+      1180px
+    );
+    --blur-orange-top: calc(
+      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
+    );
+    --blur-orange-height: clamp(
+      400px,
+      calc(400px + (1440px - 100vw) * 0.08),
+      460px
+    );
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -1340,7 +1343,7 @@
     position: relative;
     bottom: auto;
     width: 100%;
-    top: 35%;
+    top: 15rem;
   }
 
   .what-we-help-container-upper-text {
@@ -1349,9 +1352,6 @@
     right: 5%;
     top: 30%;
   }
-}
-
-@media (max-width: 375px) {
   .what-we-help-container-lower {
     flex-direction: column;
     align-items: center;
@@ -1402,5 +1402,22 @@
     left: 56.5%;
     top: 60.9%;
     transform: rotate(36.998deg);
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    color: #23252a;
+    font-family: Satoshi, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 20rem;
+  }
+
+  .about-container::before {
+    top: clamp(90px, 150vw, 550px);
+    height: clamp(260px, 150vw, 650px);
   }
 }
