@@ -395,7 +395,6 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
-
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -473,7 +472,6 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
-
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -536,7 +534,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container>svg {
+  .curve-vector-container > svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -603,7 +601,6 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
-
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -936,18 +933,23 @@
     letter-spacing: -0.0125rem;
     z-index: 3;
   }
-
 }
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(900px,
-        calc(900px + (1440px - 100vw) * 0.42),
-        1180px);
-    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
-    --blur-orange-height: clamp(400px,
-        calc(400px + (1440px - 100vw) * 0.08),
-        460px);
+    --hero-gradient-height: clamp(
+      900px,
+      calc(900px + (1440px - 100vw) * 0.42),
+      1180px
+    );
+    --blur-orange-top: calc(
+      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
+    );
+    --blur-orange-height: clamp(
+      400px,
+      calc(400px + (1440px - 100vw) * 0.08),
+      460px
+    );
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -1264,12 +1266,12 @@
 
   .text-1 {
     left: 2%;
-    top: 180%;
+    top: 200%;
   }
 
   .text-2 {
-    right: 30%;
-    top: 225%;
+    right: 2%;
+    top: 250%;
   }
 
   .central-vector {
@@ -1289,7 +1291,7 @@
 
   .central-vector-container::before {
     top: 50%;
-    height: clamp(220px, 150vw, 500px);
+    height: clamp(220px, 200vw, 650px);
   }
 
   .central-vector-main-text {
@@ -1319,15 +1321,15 @@
   }
 
   .what-we-help-container::before {
-    top: clamp(80px, 150vw, 500px);
-    height: clamp(360px, 56vw, 560px);
+    top: clamp(80px, 200vw, 700px);
+    height: clamp(360px, 150vw, 750px);
   }
 
   .what-we-help-bottom-container {
     position: relative;
     bottom: auto;
     width: 100%;
-    top: 15rem;
+    top: 25rem;
   }
 
   .what-we-help-container-upper-text {
@@ -1398,12 +1400,16 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    top: 20rem;
+    top: 30rem;
   }
 
   .about-container::before {
-    top: clamp(90px, 150vw, 550px);
-    height: clamp(260px, 150vw, 650px);
+    top: clamp(90px, 250vw, 750px);
+    height: clamp(260px, 400vw, 1100px);
+  }
+
+  .project-header-container {
+    margin-top: clamp(40px, 50vw, 188px);
   }
 
   .about-container {
@@ -1509,7 +1515,7 @@
   }
 
   .profile-container4 .profile-orbit-mobile {
-    transform: translateX(-50%) ;
+    transform: translateX(-50%);
     transform-origin: center;
     top: -10%;
   }
@@ -1586,5 +1592,92 @@
     font-size: clamp(14px, 4vw, 18px);
     line-height: 1.45;
     letter-spacing: -0.02em;
+  }
+
+  .curve-highlight {
+    font-size: clamp(18px, 2vw, 26px);
+  }
+
+  .central-vector-text {
+    font-size: clamp(14px, 7vw, 26px);
+  }
+
+  .central-vector-span-text {
+    font-size: clamp(14px, 7vw, 26px);
+  }
+
+  .what-we-help-container-upper-text p {
+    color: var(--Gray-text, #4b4d51);
+    text-align: justify;
+
+    /* 📱Body/B2-Regular */
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+  }
+
+  .header-title {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H2-Medium */
+    font-family: Satoshi;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 46.4px */
+    letter-spacing: -0.8px;
+  }
+
+  .header-title2 {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H2-Italic */
+    font-family: "Ivar Text";
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 116%; /* 46.4px */
+    letter-spacing: -1.2px;
+    text-align: right;
+    margin-top: -12%;
+  }
+
+  .about-text-container p {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H3-Medium */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 27.84px */
+    letter-spacing: -0.48px;
+  }
+
+  .mission-title {
+    color: var(--Black, #23252a);
+
+    /* 📱Header/H3-Medium */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 27.84px */
+    letter-spacing: -0.48px;
+  }
+
+  .profile-role {
+    color: var(--Light-gray-text, #757677);
+
+    /* 📱Body/B2-Italic */
+    font-family: "Ivar Text";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
   }
 }
