@@ -1178,23 +1178,34 @@
   }
 
   .hero-description {
-    width: min(100%, 16rem);
+    width: min(100%, 20rem);
     margin-top: 0.875rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.45;
     letter-spacing: -0.0125rem;
   }
 
   .hero-image {
-    width: 325px;
-    top: -6.7rem;
-    left: 62%;
+    width: 350px;
+    top: -8rem;
+    left: 63%;
     transform: translateX(-50%);
-    height: 325px;
+    height: 350px;
   }
 
   .hero-gardient {
-    height: 800px;
+    height: 900px;
+  }
+
+  .blur-orange {
+    position: absolute;
+    top: 700px;
+    left: -40%;
+    width: 200%;
+    height: 400px;
+    z-index: 0;
+    background: #f5b799;
+    filter: blur(80px);
   }
 
   .blur-orange {
@@ -1206,33 +1217,41 @@
     top: 50rem;
     right: auto;
     left: 50%;
-    width: min(15.25rem, calc(100vw - 3rem));
+    width: min(20.25rem, calc(100vw - 3rem));
     max-width: none;
     margin: 0;
     transform: translateX(-50%);
-    text-align: center;
-    font-size: 0.75rem;
-    line-height: 1.35;
-    letter-spacing: -0.0125rem;
     z-index: 3;
+    color: var(--Black, #23252a);
+    text-align: center;
+    font-family: "Ivar Text";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.6px;
   }
 
   .hero-email {
     position: absolute;
-    top: 53.25rem;
+    top: 55rem;
     right: 0;
     left: 0;
     margin: 0;
     text-align: center;
-    font-size: 0.75rem;
-    line-height: 1.4;
-    letter-spacing: -0.0125rem;
     z-index: 3;
+    color: var(--Black, #23252a);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
   }
 
   .hero-button {
     position: absolute;
-    top: 55rem;
+    top: 58rem;
     left: 50%;
     box-sizing: border-box;
     width: 10.75rem;
@@ -1248,17 +1267,22 @@
     z-index: 3;
   }
 
+  .hero {
+    min-height: 51rem;
+    padding: 5.125rem 0.75rem 5.25rem;
+  }
+
   .middle-header-container {
     padding-top: 12rem;
   }
 
   .blur-orange {
-    top: 600px;
+    top: 650px;
   }
 
   .middle-header-1,
   .middle-header-2 {
-    font-size: clamp(1.625rem, 13vw, 5rem);
+    font-size: clamp(1.625rem, 15vw, 5rem);
     line-height: 1.1;
     letter-spacing: -0.02em;
   }
@@ -1283,7 +1307,7 @@
     width: clamp(150px, 93vw, 340px);
     flex-direction: column;
     align-items: flex-start;
-    gap: clamp(16px, 3vw, 40px);
+    gap: clamp(16px, 10vw, 40px);
     position: absolute;
     top: clamp(-110px, 60vw, 225px);
     right: clamp(20px, 16vw, 270px);
@@ -1292,16 +1316,28 @@
     right: 5%;
   }
 
+  .curve-text {
+    color: var(--Gray-text, #4b4d51);
+    text-align: justify;
+    /* 📱Body/B2-Regular */
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+  }
+
   .curve-vector-container::before {
-    top: clamp(-10px, 60vw, 200px);
-    height: clamp(220px, 34vw, 300px);
+    top: clamp(-10px, 80vw, 200px);
+    height: clamp(220px, 100vw, 500px);
   }
 
   .central-vector-container {
     width: calc(100% - 2rem);
     margin-right: 1rem;
     margin-left: 1rem;
-    margin-top: 14rem;
+    margin-top: 26rem;
   }
 
   .text-1 {
@@ -1330,8 +1366,34 @@
   }
 
   .central-vector-container::before {
-    top: 120%;
+    top: 50%;
     height: clamp(220px, 150vw, 500px);
+  }
+
+  .central-vector-main-text {
+    top: 70%;
+  }
+
+  .central-vector-main-text {
+    width: clamp(220px, 80.7vw, 550px);
+    font-size: clamp(24px, 8.6vw, 48px);
+    color: var(--Black, #23252a);
+    font-family: Satoshi;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 44.08px */
+    letter-spacing: -0.76px;
+  }
+
+  .central-vector-main-span-text {
+    font-size: clamp(24px, 8.6vw, 48px);
+    color: var(--Black, #23252a);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 44.08px */
+    letter-spacing: -0.76px;
   }
 
   .what-we-help-container::before {
@@ -1441,5 +1503,10 @@
     -webkit-text-fill-color: transparent;
     margin: 0;
     padding-right: 0.12em;
+  }
+
+  .hero-content-wrapper {
+    gap: 0;
+    padding-top: 20px;
   }
 }
