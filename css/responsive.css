@@ -1185,7 +1185,7 @@
     padding: 0.875rem 1rem;
     transform: translateX(-50%);
     border-radius: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 16px;
     line-height: 1.2;
     letter-spacing: -0.0125rem;
     z-index: 3;
@@ -1444,6 +1444,9 @@
 
 /* ── About container: 375px and below ────────────── */
 @media (max-width: 375px) {
+  .language-option {
+    font-size: 16px;
+  }
   .about-container {
     padding-top: clamp(20px, 5vw, 40px);
     padding-left: 1rem;
@@ -1708,11 +1711,18 @@
   .contact-container::before {
     bottom: -100px;
     height: clamp(260px, 100vw, 525px);
+  }
+  .text-2 {
+    right: 2%;
+    top: 245%;
   }
 }
 
 /* ── About container: 375px and below ────────────── */
 @media (max-width: 420px) {
+  .language-option {
+    font-size: 16px;
+  }
   .about-container {
     padding-top: clamp(20px, 5vw, 40px);
     padding-left: 1rem;
@@ -1977,5 +1987,10 @@
   .contact-container::before {
     bottom: -100px;
     height: clamp(260px, 100vw, 525px);
+  }
+
+  .text-2 {
+    right: 2%;
+    top: 250%;
   }
 }
