@@ -1816,7 +1816,7 @@
   }
 
   .profile-container3 .profile-orbit-mobile {
-    top: 32%;
+    top: 30%;
   }
 
   .profile-container4 .profile-orbit-mobile {
@@ -1837,7 +1837,7 @@
   .profile-image-container {
     width: 100%;
     height: auto;
-    max-height: 320px;
+    max-height: 358px;
     object-fit: cover;
     display: block;
     border-radius: 16px;
