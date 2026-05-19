@@ -1354,6 +1354,10 @@
     right: 2%;
     top: 245%;
   }
+
+  .learn-about-text-container p {
+    font-size: 22px;
+  }
 }
 
 /* ── About container: 375px and below ────────────── */
@@ -1615,11 +1619,11 @@
     position: relative;
     bottom: auto;
     width: 100%;
-    top: 25rem;
+    top: 18rem;
   }
 
   .what-we-help-container-upper-text {
-    width: clamp(150px, 90vw, 338px);
+    width: clamp(150px, 89vw, 367px);
     left: 5%;
     right: 5%;
     top: 30%;
@@ -2027,6 +2031,10 @@
     line-height: 116%;
     letter-spacing: -0.03em;
   }
+
+  .learn-about-text-container p {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2127,6 +2135,10 @@
   .curve-text-container {
     left: 3%;
     right: 3%;
+  }
+
+  .learn-about-text-container p {
+    font-size: 22px;
   }
 }
 
