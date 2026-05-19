@@ -395,7 +395,6 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
-
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -473,7 +472,6 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
-
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -536,7 +534,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container>svg {
+  .curve-vector-container > svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -603,7 +601,6 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
-
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -673,7 +670,7 @@
 @media (max-width: 480px) {
   .what-we-help-container {
     padding: 0 16px;
-    padding-top: 240px;
+    padding-top: 450px;
   }
 
   .what-we-help-header {
@@ -940,13 +937,19 @@
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(900px,
-        calc(900px + (1440px - 100vw) * 0.42),
-        1180px);
-    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
-    --blur-orange-height: clamp(400px,
-        calc(400px + (1440px - 100vw) * 0.08),
-        460px);
+    --hero-gradient-height: clamp(
+      900px,
+      calc(900px + (1440px - 100vw) * 0.42),
+      1180px
+    );
+    --blur-orange-top: calc(
+      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
+    );
+    --blur-orange-height: clamp(
+      400px,
+      calc(400px + (1440px - 100vw) * 0.08),
+      460px
+    );
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -1217,16 +1220,16 @@
   }
 
   .curve-image-container {
-    left: 24%;
-    width: 9.875rem;
+    left: 25%;
+    width: 12.875rem;
     transform: rotate(-15deg);
-    top: 12%;
+    top: 5%;
   }
 
   .curve-text-container {
     display: flex;
     width: clamp(260px, 33vw, 445px);
-    width: clamp(150px, 93vw, 340px);
+    width: clamp(150px, 89vw, 365px);
     flex-direction: column;
     align-items: flex-start;
     gap: clamp(16px, 10vw, 40px);
@@ -1441,6 +1444,16 @@
   .hero-content-wrapper {
     gap: 0;
     padding-top: 20px;
+  }
+
+  .curve-company-name {
+    color: #4b4d51;
+    font-family: "Ivar Text", serif;
+    font-size: clamp(18px, 6vw, 30px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 116%;
+    letter-spacing: -0.03em;
   }
 }
 
@@ -2008,7 +2021,17 @@
 
   .text-2 {
     right: 2%;
-    top: 250%;
+    top: 245%;
+  }
+
+  .curve-company-name {
+    color: #4b4d51;
+    font-family: "Ivar Text", serif;
+    font-size: clamp(18px, 6vw, 30px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 116%;
+    letter-spacing: -0.03em;
   }
 }
 
