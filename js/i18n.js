@@ -15,7 +15,7 @@ const translations = {
     central_vector_main_text: 'AI that changes how your<br /><span class="central-vector-main-span-text">business works</span>',
     what_we_help_upper_1: "AI is becoming useful for many SMEs as a knowledge tool for research and summaries, but the real value starts when it moves from answers to action — triggering workflows, updating systems, generating documents, and eliminating busywork.",
     what_we_help_upper_2: "We help businesses make that shift in a practical, compliant way, with attention to GDPR, digital sovereignty, and long-term operational fit.",
-    what_we_help_header: "What we <span>help with</span>",
+    what_we_help_header: "What we <span class=\"what-we-help-header-span\">help with</span>",
     learn_about_1: "Solution strategy and digital roadmaps",
     learn_about_2: "Websites, digital products, and e-commerce",
     learn_about_3: "Practical AI solutions and automations",
@@ -46,7 +46,7 @@ const translations = {
     central_vector_main_text: 'KI, die Ihren<br /><span class="central-vector-main-span-text">Geschäftsalltag verändert</span>',
     what_we_help_upper_1: "Für viele kleine und mittelständische Unternehmen ist KI bereits als Wissens-Tool für Recherchen und Zusammenfassungen nützlich. Der wahre Mehrwert entsteht jedoch erst, wenn KI vom reinen Wissensmanagement zum Handeln übergeht: durch automatisierte Workflows, Systemaktualisierungen, Dokumentenerstellung und die Eliminierung zeitraubender Routineaufgaben.",
     what_we_help_upper_2: "Wir begleiten Unternehmen bei diesem Wandel – praxisnah, rechtskonform unter Berücksichtigung der DSGVO, mit Fokus auf digitale Souveränität und langfristige operative Stabilität.",
-    what_we_help_header: "Unsere <span>Schwerpunkte</span>",
+    what_we_help_header: "Unsere <span class=\"what-we-help-header-span\">Schwerpunkte</span>",
     learn_about_1: "Strategische Beratung und digitale Roadmaps",
     learn_about_2: "Websites, digitale Produkte und E-Commerce-Lösungen",
     learn_about_3: "Praxisorientierte KI-Lösungen und Automatisierungen",
@@ -94,6 +94,12 @@ function applyTranslations(lang) {
   const centralVectorText1 = document.querySelector('.text-1');
   const centralVectorText2 = document.querySelector('.text-2');
   const centralVectorSpanText = document.querySelectorAll('.central-vector-span-text');
+  const whatWeHelpUpper = document.querySelectorAll('.what_we_help_upper');
+  const whatWeHelpContainerUpperText = document.querySelector('.what-we-help-container-upper-text');
+  const whatWeHelpHeader = document.querySelector('.what-we-help-header');
+  const whatWeHelpHeaderSpan = document.querySelector('.what-we-help-header-span');
+  const aboutHeaderTitle = document.querySelector('.header-title');
+  const aboutHeaderTitle2 = document.querySelector('.header-title2');
 
   if (lang === 'de') {
     middleHeader1.style.fontSize = 'clamp(22px, 6vw, 100px)';
@@ -105,7 +111,7 @@ function applyTranslations(lang) {
     if (window.innerWidth <= 480) {
       middleHeader1.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
       middleHeader2.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
-      
+
       heroTitle2.style.fontSize = 'clamp(2.4rem, 6vw, 3rem)';
 
       curveText.style.fontSize = 'clamp(0.875rem, 4vw, 1.25rem)';
@@ -116,6 +122,18 @@ function applyTranslations(lang) {
       centralVectorSpanText.forEach(el => {
         el.style.fontSize = 'clamp(14px, 5vw, 26px)';
       });
+      whatWeHelpUpper.forEach(el => {
+        el.style.fontSize = 'clamp(14px, 4vw, 26px)';
+      });
+      whatWeHelpContainerUpperText.style.top = '20%';
+      
+      whatWeHelpHeader.style.fontSize = 'clamp(1.875rem, 6vw, 2.3rem)';
+      whatWeHelpHeaderSpan.style.fontSize = 'clamp(1.875rem, 6vw, 2.3rem)';
+
+      aboutHeaderTitle.style.fontSize = 'clamp(1.625rem, 5.5vw, 2rem)';
+      aboutHeaderTitle2.style.fontSize = 'clamp(1.75rem, 6vw, 2.2rem)';
+      aboutHeaderTitle2.style.marginTop = '0%';
+      aboutHeaderTitle2.style.textAlign = 'left';
     }
   }
 
