@@ -1646,7 +1646,7 @@
 
   .our-technologies-item {
     display: inline-flex;
-    padding: 16px 32px;
+    padding: 16px 48px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1666,7 +1666,7 @@
   .web-mobile {
     transform: rotate(-35.664deg);
     left: -4%;
-    top: 33.2%;
+    top: 31%;
   }
 
   .cloud-devops {
@@ -1675,8 +1675,8 @@
   }
 
   .ai {
-    left: 32%;
-    top: 48.3%;
+    left: 28%;
+    top: 47%;
   }
 
   .backend {
