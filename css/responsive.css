@@ -2325,18 +2325,18 @@
   }
 
   .our-technologies-item {
-    padding: 12px 24px;
+    padding: 15px 30px;
     font-size: 22px;
   }
 
   .web-mobile {
     left: -4%;
-    top: 43.2%;
+    top: 39.2%;
   }
 
   .ai {
     left: 31%;
-    top: 57.3%;
+    top: 52.3%;
   }
 
   .backend {
@@ -2345,11 +2345,11 @@
   }
 
   .header-title {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .header-title2 {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .profile-info-container {
