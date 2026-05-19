@@ -2041,6 +2041,15 @@
   }
 }
 
+/* For IPPhone 15  */
+@media (min-width: 393px) and (max-width: 394px) {
+  .hero-orbit {
+    top: 50%;
+    margin-top: -90%;
+  }
+}
+/* For IPPhone 15  */
+
 @media (max-width: 395px) {
   .hero-title {
     font-size: 3rem;
@@ -2058,10 +2067,10 @@
     font-size: 15px;
   }
 
-  .hero-orbit {
+  /* .hero-orbit {
     top: 50%;
     margin-top: -90%;
-  }
+  } */
 
   .curve-text-container {
     left: 5%;
