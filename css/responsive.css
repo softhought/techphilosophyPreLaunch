@@ -1370,7 +1370,7 @@
 
   .hero-orbit-wrapper {
     min-height: 17.5rem;
-    margin-top: 25.375rem;
+    margin-top: 27.375rem;
   }
 
   .hero-title {
@@ -1395,11 +1395,11 @@
   }
 
   .hero-image {
-    width: 350px;
-    top: -8rem;
-    left: 63%;
+    width: clamp(220px, 96vw, 400px);
+    height: clamp(220px, 96vw, 400px);
+    top: clamp(-10rem, -40vw, -3rem);
+    left: clamp(50%, 76vw, 64%);
     transform: translateX(-50%);
-    height: 350px;
   }
 
   .hero-gardient {
@@ -2043,11 +2043,11 @@
   }
 
   .hero-image {
-    width: 300px;
-    top: -6rem;
-    left: 63%;
+    width: clamp(220px, 96vw, 400px);
+    height: clamp(220px, 96vw, 400px);
+    top: clamp(-10rem, -40vw, -3rem);
+    left: clamp(50%, 76vw, 64%);
     transform: translateX(-50%);
-    height: 300px;
   }
 
   .hero-top-text {
@@ -2148,11 +2148,11 @@
   }
 
   .hero-image {
-    width: 300px;
-    top: -6rem;
-    left: 63%;
+    width: clamp(220px, 96vw, 400px);
+    height: clamp(220px, 96vw, 400px);
+    top: clamp(-10rem, -40vw, -3rem);
+    left: clamp(50%, 76vw, 64%);
     transform: translateX(-50%);
-    height: 300px;
   }
 
   .hero-top-text {
@@ -2282,11 +2282,11 @@
   }
 
   .hero-image {
-    width: 310px;
-    top: -6rem;
-    left: 58%;
+    width: clamp(220px, 96vw, 400px);
+    height: clamp(220px, 96vw, 400px);
+    top: clamp(-10rem, -40vw, -3rem);
+    left: clamp(50%, 76vw, 64%);
     transform: translateX(-50%);
-    height: 310px;
   }
 
   .hero-top-text {
