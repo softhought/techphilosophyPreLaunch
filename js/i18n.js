@@ -97,6 +97,19 @@ function applyTranslations(lang) {
     projectHeader2.style.fontSize = 'clamp(36px, 8vw, 120px)';
     // heroTitle2.style.fontSize = 'clamp(32px, 4.2vw, 80px)';
   }
+
+  if (window.innerWidth <= 480) {
+    document.querySelector(".central-vector-main-text").innerHTML =
+      'AI that changes how<br /> your <span class="central-vector-main-span-text"> business works</span>';
+  }
+  if (window.innerWidth <= 480) {
+    document.querySelector(".hero-top-text").innerHTML =
+      "Our full website is launching soon —<br /> but we're already here for early conversations.";
+  }
+  if (window.innerWidth <= 480) {
+    document.querySelector(".title-1").innerHTML =
+      "Have <br />a project";
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
