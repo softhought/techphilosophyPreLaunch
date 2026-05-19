@@ -1590,23 +1590,23 @@
 
   .central-vector-main-text {
     width: clamp(220px, 80.7vw, 550px);
-    font-size: clamp(24px, 8.6vw, 48px);
+    font-size: clamp(20px, 8.6vw, 37px);
     color: var(--Black, #23252a);
     font-family: Satoshi;
-    font-size: 32px;
+    font-size: clamp(20px, 8.6vw, 37px);
     font-style: normal;
     font-weight: 500;
     line-height: 116%;
     /* 44.08px */
     letter-spacing: -0.76px;
     display: block;
-    /* text-align: left; */
+    text-align: left;
   }
 
   .central-vector-main-span-text {
-    font-size: clamp(24px, 8.6vw, 48px);
+    font-size: clamp(20px, 8.6vw, 37px);
     color: var(--Black, #23252a);
-    font-size: 32px;
+    font-size: clamp(20px, 8.6vw, 37px);
     font-style: normal;
     font-weight: 500;
     line-height: 116%;
@@ -2066,13 +2066,13 @@
     margin-top: 24rem;
   }
 
-  .central-vector-main-text {
+  /* .central-vector-main-text {
     font-size: 28px;
-  }
+  } */
 
-  .central-vector-main-span-text {
+  /* .central-vector-main-span-text {
     font-size: 28px;
-  }
+  } */
 
   .our-technologies-item {
     padding: 12px 24px;
@@ -2183,13 +2183,13 @@
     margin-top: 24rem;
   }
 
-  .central-vector-main-text {
+  /* .central-vector-main-text {
     font-size: 28px;
-  }
+  } */
 
-  .central-vector-main-span-text {
+  /* .central-vector-main-span-text {
     font-size: 28px;
-  }
+  } */
 
   .our-technologies-item {
     padding: 12px 24px;
@@ -2317,13 +2317,13 @@
     margin-top: 24rem;
   }
 
-  .central-vector-main-text {
+  /* .central-vector-main-text {
     font-size: 30px;
-  }
+  } */
 
-  .central-vector-main-span-text {
+  /* .central-vector-main-span-text {
     font-size: 30px;
-  }
+  } */
 
   .our-technologies-item {
     padding: 15px 30px;
@@ -2451,13 +2451,13 @@
     margin-top: 24rem;
   }
 
-  .central-vector-main-text {
+  /* .central-vector-main-text {
     font-size: 35px;
-  }
+  } */
 
-  .central-vector-main-span-text {
+  /* .central-vector-main-span-text {
     font-size: 35px;
-  }
+  } */
 
   .our-technologies-item {
     padding: 15px 30px;
