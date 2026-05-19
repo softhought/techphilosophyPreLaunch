@@ -1338,9 +1338,9 @@
   }
 
   .footer-svg {
-    width: clamp(220px, 101vw, 450px);
+    width: clamp(220px, 150vw, 600px);
     height: clamp(250px, 134vw, 550px);
-    margin-left: clamp(-20px, -5vw, -50px);
+    margin-left: clamp(-110px, -28vw, -50px);
     margin-right: clamp(-20px, -5vw, -50px);
   }
 
@@ -2006,9 +2006,9 @@
   }
 
   .footer-svg {
-    width: clamp(220px, 101vw, 450px);
+    width: clamp(220px, 150vw, 600px);
     height: clamp(250px, 134vw, 550px);
-    margin-left: clamp(-20px, -5vw, -50px);
+    margin-left: clamp(-110px, -28vw, -50px);
     margin-right: clamp(-20px, -5vw, -50px);
   }
 
