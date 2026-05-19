@@ -395,7 +395,6 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
-
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -473,7 +472,6 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
-
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -536,7 +534,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container>svg {
+  .curve-vector-container > svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -603,7 +601,6 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
-
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -940,13 +937,19 @@
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(900px,
-        calc(900px + (1440px - 100vw) * 0.42),
-        1180px);
-    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
-    --blur-orange-height: clamp(400px,
-        calc(400px + (1440px - 100vw) * 0.08),
-        460px);
+    --hero-gradient-height: clamp(
+      900px,
+      calc(900px + (1440px - 100vw) * 0.42),
+      1180px
+    );
+    --blur-orange-top: calc(
+      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
+    );
+    --blur-orange-height: clamp(
+      400px,
+      calc(400px + (1440px - 100vw) * 0.08),
+      460px
+    );
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -1597,6 +1600,7 @@
     /* 44.08px */
     letter-spacing: -0.76px;
     display: block;
+    /* text-align: left; */
   }
 
   .central-vector-main-span-text {
@@ -2416,11 +2420,11 @@
   }
 
   .hero-image {
-    width: 350px;
-    top: -7rem;
-    left: 60%;
+    width: clamp(220px, 96vw, 400px);
+    height: clamp(220px, 96vw, 400px);
+    top: clamp(-10rem, -40vw, -3rem);
+    left: clamp(50%, 76vw, 64%);
     transform: translateX(-50%);
-    height: 350px;
   }
 
   .hero-top-text {
