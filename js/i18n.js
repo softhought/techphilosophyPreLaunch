@@ -91,6 +91,9 @@ function applyTranslations(lang) {
   const heroTitle2 = document.querySelector('.hero-title-2');
   const curveText = document.querySelector('.curve-text');
   const curveTextTwo = document.querySelector('.curve-text-two');
+  const centralVectorText1 = document.querySelector('.text-1');
+  const centralVectorText2 = document.querySelector('.text-2');
+  const centralVectorSpanText = document.querySelectorAll('.central-vector-span-text');
 
   if (lang === 'de') {
     middleHeader1.style.fontSize = 'clamp(22px, 6vw, 100px)';
@@ -102,9 +105,17 @@ function applyTranslations(lang) {
     if (window.innerWidth <= 480) {
       middleHeader1.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
       middleHeader2.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
+      
       heroTitle2.style.fontSize = 'clamp(2.4rem, 6vw, 3rem)';
+
       curveText.style.fontSize = 'clamp(0.875rem, 4vw, 1.25rem)';
       curveTextTwo.style.fontSize = 'clamp(0.875rem, 4vw, 1.25rem)';
+
+      centralVectorText1.style.fontSize = 'clamp(14px, 5vw, 26px)';
+      centralVectorText2.style.fontSize = 'clamp(14px, 5vw, 26px)';
+      centralVectorSpanText.forEach(el => {
+        el.style.fontSize = 'clamp(14px, 5vw, 26px)';
+      });
     }
   }
 
