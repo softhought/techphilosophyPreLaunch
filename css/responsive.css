@@ -2591,4 +2591,14 @@
   .learn-about-text-container p {
     font-size: 22px;
   }
+
+  .header-title-de {
+    font-size: 26px;
+  }
+
+  .header-title2-de {
+    font-size: 30px;
+    margin-top: 0%;
+    text-align: left;
+  }
 }

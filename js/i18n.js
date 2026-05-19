@@ -137,7 +137,6 @@ function applyTranslations(lang) {
     middleHeader2.style.fontSize = "clamp(26px, 6.8vw, 100px)";
     projectHeader1.style.fontSize = "clamp(36px, 8vw, 120px)";
     projectHeader2.style.fontSize = "clamp(36px, 8vw, 120px)";
-    // heroTitle2.style.fontSize = 'clamp(32px, 4.2vw, 80px)';
 
     if (window.innerWidth <= 480) {
       middleHeader1.style.fontSize = "clamp(1.625rem, 12vw, 5rem)";
@@ -163,10 +162,9 @@ function applyTranslations(lang) {
       whatWeHelpHeader.style.fontSize = "clamp(1.875rem, 6vw, 2.3rem)";
       whatWeHelpHeaderSpan.style.fontSize = "clamp(1.875rem, 6vw, 2.3rem)";
 
-      aboutHeaderTitle.style.fontSize = "clamp(1.625rem, 5.5vw, 2rem)";
-      aboutHeaderTitle2.style.fontSize = "clamp(1.75rem, 6vw, 2.2rem)";
-      aboutHeaderTitle2.style.marginTop = "0%";
-      aboutHeaderTitle2.style.textAlign = "left";
+      aboutHeaderTitle.classList.add("header-title-de");
+      aboutHeaderTitle2.classList.add("header-title2-de");
+
       projectHeader.forEach((el) => {
         el.style.fontSize = "clamp(1.625rem, 16vw, 5rem)";
       });
@@ -250,10 +248,8 @@ function resetStyles() {
   whatWeHelpHeader.style.fontSize = "";
   whatWeHelpHeaderSpan.style.fontSize = "";
 
-  aboutHeaderTitle.style.fontSize = "";
-  aboutHeaderTitle2.style.fontSize = "";
-  aboutHeaderTitle2.style.marginTop = "";
-  aboutHeaderTitle2.style.textAlign = "";
+  aboutHeaderTitle.classList.remove("header-title-de");
+  aboutHeaderTitle2.classList.remove("header-title2-de");
 
   centralVectorSpanText.forEach((el) => {
     el.style.fontSize = "";
