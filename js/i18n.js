@@ -89,6 +89,7 @@ const translations = {
 function applyTranslations(lang) {
   const t = translations[lang];
   if (!t) return;
+  resetStyles();
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
@@ -129,6 +130,7 @@ function applyTranslations(lang) {
   );
   const aboutHeaderTitle = document.querySelector(".header-title");
   const aboutHeaderTitle2 = document.querySelector(".header-title2");
+  const projectHeader = document.querySelectorAll(".project-header");
 
   if (lang === "de") {
     middleHeader1.style.fontSize = "clamp(22px, 6vw, 100px)";
@@ -165,6 +167,9 @@ function applyTranslations(lang) {
       aboutHeaderTitle2.style.fontSize = "clamp(1.75rem, 6vw, 2.2rem)";
       aboutHeaderTitle2.style.marginTop = "0%";
       aboutHeaderTitle2.style.textAlign = "left";
+      projectHeader.forEach((el) => {
+        el.style.fontSize = "clamp(1.625rem, 16vw, 5rem)";
+      });
     }
   }
 
@@ -172,7 +177,8 @@ function applyTranslations(lang) {
     if (lang === "de") {
       document.querySelector(".central-vector-main-text").innerHTML =
         'KI, die Ihren <span class="central-vector-main-span-text">Geschäftsalltag verändert</span>';
-      centralVectorText1.style.fontSize = "clamp(20px, 7.6vw, 37px)";
+      document.querySelector(".central-vector-main-text").style.fontSize = "clamp(20px, 7.6vw, 37px)";
+      document.querySelector(".central-vector-main-span-text").style.fontSize = "clamp(20px, 7.6vw, 37px)";
     } else {
       document.querySelector(".central-vector-main-text").innerHTML =
         'AI that changes how<br /> your <span class="central-vector-main-span-text"> business works</span>';
@@ -193,6 +199,8 @@ function applyTranslations(lang) {
         "Haben <br />Sie ein Projekt";
     } else {
       document.querySelector(".title-1").innerHTML = "Have <br />a project";
+      document.querySelector(".title-1").style.fontSize = "clamp(1.625rem, 17vw, 5rem)";
+      document.querySelector(".title-2").style.fontSize = "clamp(1.625rem, 17vw, 5rem)";
     }
   }
 }
@@ -205,3 +213,63 @@ document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("lang");
   applyTranslations(saved === "de" ? "de" : "en");
 });
+
+function resetStyles() {
+  const middleHeader1 = document.querySelector(".middle-header-1");
+  const middleHeader2 = document.querySelector(".middle-header-2");
+  const projectHeader1 = document.querySelector(".title-1");
+  const projectHeader2 = document.querySelector(".title-2");
+  const heroTitle2 = document.querySelector(".hero-title-2");
+  const curveText = document.querySelector(".curve-text");
+  const curveTextTwo = document.querySelector(".curve-text-two");
+  const centralVectorSpanText = document.querySelectorAll(
+    ".central-vector-span-text"
+  );
+  const whatWeHelpUpper = document.querySelectorAll(".what_we_help_upper");
+  const whatWeHelpContainerUpperText = document.querySelector(
+    ".what-we-help-container-upper-text"
+  );
+  const whatWeHelpHeader = document.querySelector(".what-we-help-header");
+  const whatWeHelpHeaderSpan = document.querySelector(
+    ".what-we-help-header-span"
+  );
+  const aboutHeaderTitle = document.querySelector(".header-title");
+  const aboutHeaderTitle2 = document.querySelector(".header-title2");
+  const projectHeader = document.querySelectorAll(".project-header");
+
+  middleHeader1.style.fontSize = "";
+  middleHeader2.style.fontSize = "";
+  projectHeader1.style.fontSize = "";
+  projectHeader2.style.fontSize = "";
+  heroTitle2.style.fontSize = "";
+  curveText.style.fontSize = "";
+  curveTextTwo.style.fontSize = "";
+
+  whatWeHelpContainerUpperText.style.top = "";
+
+  whatWeHelpHeader.style.fontSize = "";
+  whatWeHelpHeaderSpan.style.fontSize = "";
+
+  aboutHeaderTitle.style.fontSize = "";
+  aboutHeaderTitle2.style.fontSize = "";
+  aboutHeaderTitle2.style.marginTop = "";
+  aboutHeaderTitle2.style.textAlign = "";
+
+  centralVectorSpanText.forEach((el) => {
+    el.style.fontSize = "";
+  });
+
+  whatWeHelpUpper.forEach((el) => {
+    el.style.fontSize = "";
+  });
+
+  projectHeader.forEach((el) => {
+    el.style.fontSize = "";
+  });
+
+  document.querySelector(".central-vector-main-text").style.fontSize = "";
+  document.querySelector(".central-vector-main-span-text").style.fontSize = "";
+
+  document.querySelector(".title-1").style.fontSize = "";
+  document.querySelector(".title-2").style.fontSize = "";
+}
