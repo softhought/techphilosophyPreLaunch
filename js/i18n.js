@@ -89,6 +89,8 @@ function applyTranslations(lang) {
   const projectHeader1 = document.querySelector('.title-1');
   const projectHeader2 = document.querySelector('.title-2');
   const heroTitle2 = document.querySelector('.hero-title-2');
+  const curveText = document.querySelector('.curve-text');
+  const curveTextTwo = document.querySelector('.curve-text-two');
 
   if (lang === 'de') {
     middleHeader1.style.fontSize = 'clamp(22px, 6vw, 100px)';
@@ -96,6 +98,14 @@ function applyTranslations(lang) {
     projectHeader1.style.fontSize = 'clamp(36px, 8vw, 120px)';
     projectHeader2.style.fontSize = 'clamp(36px, 8vw, 120px)';
     // heroTitle2.style.fontSize = 'clamp(32px, 4.2vw, 80px)';
+
+    if (window.innerWidth <= 480) {
+      middleHeader1.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
+      middleHeader2.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
+      heroTitle2.style.fontSize = 'clamp(2.4rem, 6vw, 3rem)';
+      curveText.style.fontSize = 'clamp(0.875rem, 4vw, 1.25rem)';
+      curveTextTwo.style.fontSize = 'clamp(0.875rem, 4vw, 1.25rem)';
+    }
   }
 
   if (window.innerWidth <= 480) {
