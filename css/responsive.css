@@ -2106,4 +2106,111 @@
     right: 0%;
     top: 254%;
   }
+
+  .curve-text-container {
+    left: 3%;
+    right: 3%;
+  }
+}
+
+
+@media (min-width: 321px) and (max-width: 350px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-image {
+    width: 300px;
+    top: -6rem;
+    left: 63%;
+    transform: translateX(-50%);
+    height: 300px;
+  }
+
+  .hero-top-text {
+    font-size: 12px;
+  }
+
+  .curve-text-container {
+    left: 3%;
+    right: 3%;
+  }
+
+  .curve-media {
+    left: -65%;
+  }
+
+  .central-vector-container {
+    margin-top: 24rem;
+  }
+
+  .central-vector-main-text {
+    font-size: 28px;
+  }
+
+  .central-vector-main-span-text {
+    font-size: 28px;
+  }
+
+  .our-technologies-item {
+    padding: 12px 24px;
+    font-size: 22px;
+  }
+
+  .web-mobile {
+    left: -4%;
+    top: 43.2%;
+  }
+
+  .ai {
+    left: 31%;
+    top: 57.3%;
+  }
+
+  .backend {
+    left: 54.5%;
+    top: 64.9%;
+  }
+
+  .header-title {
+    font-size: 35px;
+  }
+
+  .header-title2 {
+    font-size: 35px;
+  }
+
+  .profile-info-container {
+    padding-left: 22px;
+  }
+
+  .profile-card-img-wrap {
+    width: 85%;
+  }
+
+  .mission-title {
+    font-size: 20px;
+  }
+
+  .profile-role {
+    font-size: 12px;
+  }
+
+  .about-text-container p {
+    font-size: 20px;
+  }
+
+  .profiles-row {
+    gap: 6rem;
+  }
+
+  .text-1 {
+    left: 0%;
+    top: 200%;
+  }
+
+  .text-2 {
+    right: 0%;
+    top: 252%;
+  }
 }
