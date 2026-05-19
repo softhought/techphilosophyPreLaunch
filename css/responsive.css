@@ -2089,11 +2089,21 @@
     font-size: 12px;
   }
 
-  .about-text-container p{
+  .about-text-container p {
     font-size: 20px;
   }
 
   .profiles-row {
     gap: 6rem;
+  }
+
+  .text-1 {
+    left: 0%;
+    top: 200%;
+  }
+
+  .text-2 {
+    right: 0%;
+    top: 254%;
   }
 }
