@@ -395,6 +395,7 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
+
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -472,6 +473,7 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
+
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -534,7 +536,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container > svg {
+  .curve-vector-container>svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -601,6 +603,7 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
+
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -937,19 +940,13 @@
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(
-      900px,
-      calc(900px + (1440px - 100vw) * 0.42),
-      1180px
-    );
-    --blur-orange-top: calc(
-      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
-    );
-    --blur-orange-height: clamp(
-      400px,
-      calc(400px + (1440px - 100vw) * 0.08),
-      460px
-    );
+    --hero-gradient-height: clamp(900px,
+        calc(900px + (1440px - 100vw) * 0.42),
+        1180px);
+    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
+    --blur-orange-height: clamp(400px,
+        calc(400px + (1440px - 100vw) * 0.08),
+        460px);
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -2048,6 +2045,7 @@
     margin-top: -90%;
   }
 }
+
 /* For IPPhone 15  */
 
 @media (max-width: 395px) {
@@ -2215,6 +2213,10 @@
 
   .curve-text-container {
     top: clamp(-110px, 65vw, 240px);
+  }
+
+  .project-header-container {
+    margin-top: clamp(40px, 20vw, 188px);
   }
 }
 
