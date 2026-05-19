@@ -1575,13 +1575,13 @@
   }
 
   .what-we-help-container::before {
-    top: clamp(80px, 150vw, 500px);
-    height: clamp(360px, 56vw, 560px);
+    top: clamp(80px, 250vw, 800px);
+    height: clamp(360px, 180vw, 800px);
   }
 
   .central-vector-container::before {
     top: 50%;
-    height: clamp(220px, 200vw, 650px);
+    height: clamp(220px, 225vw, 800px);
   }
 
   .central-vector-main-text {
@@ -1615,8 +1615,8 @@
   }
 
   .what-we-help-container::before {
-    top: clamp(80px, 200vw, 700px);
-    height: clamp(360px, 150vw, 750px);
+    top: clamp(80px, 250vw, 800px);
+    height: clamp(360px, 180vw, 800px);
   }
 
   .what-we-help-bottom-container {
@@ -1699,7 +1699,7 @@
 
   .about-container::before {
     top: clamp(90px, 250vw, 750px);
-    height: clamp(260px, 400vw, 1100px);
+    height: clamp(260px, 430vw, 1300px);
   }
 
   .project-header-container {
