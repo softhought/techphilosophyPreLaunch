@@ -395,6 +395,7 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
+
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -472,6 +473,7 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
+
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -534,7 +536,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container > svg {
+  .curve-vector-container>svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -601,6 +603,7 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
+
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -937,19 +940,13 @@
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(
-      900px,
-      calc(900px + (1440px - 100vw) * 0.42),
-      1180px
-    );
-    --blur-orange-top: calc(
-      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
-    );
-    --blur-orange-height: clamp(
-      400px,
-      calc(400px + (1440px - 100vw) * 0.08),
-      460px
-    );
+    --hero-gradient-height: clamp(900px,
+        calc(900px + (1440px - 100vw) * 0.42),
+        1180px);
+    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
+    --blur-orange-height: clamp(400px,
+        calc(400px + (1440px - 100vw) * 0.08),
+        460px);
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -2410,5 +2407,159 @@
     display: flex;
     flex-direction: column;
     top: 20rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-image {
+    width: 350px;
+    top: -7rem;
+    left: 60%;
+    transform: translateX(-50%);
+    height: 350px;
+  }
+
+  .hero-top-text {
+    font-size: 15px;
+  }
+
+  .curve-text-container {
+    left: 5%;
+    right: 5%;
+  }
+
+  .curve-image-container {
+    left: 25%;
+    width: 10.875rem;
+    transform: rotate(-15deg);
+    top: 10%;
+  }
+
+  .curve-media {
+    left: -65%;
+  }
+
+  .central-vector-container {
+    margin-top: 24rem;
+  }
+
+  .central-vector-main-text {
+    font-size: 35px;
+  }
+
+  .central-vector-main-span-text {
+    font-size: 35px;
+  }
+
+  .our-technologies-item {
+    padding: 15px 30px;
+    font-size: 22px;
+  }
+
+  .web-mobile {
+    left: -4%;
+    top: 39.2%;
+  }
+
+  .ai {
+    left: 28%;
+    top: 52.3%;
+  }
+
+  .backend {
+    left: 49.5%;
+    top: 63.9%;
+  }
+
+  .header-title {
+    font-size: 44px;
+  }
+
+  .header-title2 {
+    font-size: 44px;
+  }
+
+  .profile-info-container {
+    padding-left: 22px;
+  }
+
+  .profile-card-img-wrap {
+    width: 85%;
+  }
+
+  .mission-title {
+    font-size: 20px;
+  }
+
+  .profile-role {
+    font-size: 12px;
+  }
+
+  .about-text-container p {
+    font-size: 25px;
+  }
+
+  .profiles-row {
+    gap: 6rem;
+  }
+
+  .text-1 {
+    left: 0%;
+    top: 200%;
+  }
+
+  .text-2 {
+    right: 0%;
+    top: 252%;
+  }
+
+  .what-we-help-container-upper-text {
+    width: clamp(150px, 90vw, 338px);
+    left: 5%;
+    right: 5%;
+    top: 26%;
+  }
+
+  .what-we-help-bottom-container {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    top: 12rem;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    color: #23252a;
+    font-family: Satoshi, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 20rem;
+  }
+
+  .profile-container3,
+  .profile-container4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    overflow: visible;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-container3 .profile-orbit-mobile {
+    top: 26%;
   }
 }
