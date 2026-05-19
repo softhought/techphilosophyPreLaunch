@@ -395,7 +395,6 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
-
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -473,7 +472,6 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
-
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -536,7 +534,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container>svg {
+  .curve-vector-container > svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -603,7 +601,6 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
-
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -940,13 +937,19 @@
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(900px,
-        calc(900px + (1440px - 100vw) * 0.42),
-        1180px);
-    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
-    --blur-orange-height: clamp(400px,
-        calc(400px + (1440px - 100vw) * 0.08),
-        460px);
+    --hero-gradient-height: clamp(
+      900px,
+      calc(900px + (1440px - 100vw) * 0.42),
+      1180px
+    );
+    --blur-orange-top: calc(
+      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
+    );
+    --blur-orange-height: clamp(
+      400px,
+      calc(400px + (1440px - 100vw) * 0.08),
+      460px
+    );
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -2055,6 +2058,11 @@
     font-size: 15px;
   }
 
+  .hero-orbit {
+    top: 50%;
+    margin-top: -90%;
+  }
+
   .curve-text-container {
     left: 5%;
     right: 5%;
@@ -2084,23 +2092,28 @@
   } */
 
   .our-technologies-item {
-    padding: 15px 30px;
+    padding: 15px 35px;
     font-size: 22px;
   }
 
+  .cloud-devops {
+    left: 5.2%;
+    bottom: 0.4%;
+  }
+
   .web-mobile {
-    left: -4%;
-    top: 39.2%;
+    left: -2%;
+    top: 39%;
   }
 
   .ai {
-    left: 28%;
+    left: 30%;
     top: 52.3%;
   }
 
   .backend {
-    left: 49.5%;
-    top: 63.9%;
+    left: 55.5%;
+    top: 66.9%;
   }
 
   .header-title {
@@ -2189,6 +2202,10 @@
 
   .profile-container3 .profile-orbit-mobile {
     top: 26%;
+  }
+
+  .curve-text-container {
+    top: clamp(-110px, 65vw, 240px);
   }
 }
 
