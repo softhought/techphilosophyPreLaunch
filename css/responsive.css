@@ -395,6 +395,7 @@
 
 /* Tablets portrait: 900px and below */
 @media (max-width: 900px) {
+
   .hero,
   .contact-container {
     padding-right: 1.5rem;
@@ -472,6 +473,7 @@
 
 /* Phones: 560px and below */
 @media (max-width: 560px) {
+
   .hero,
   .middle-header-container,
   .curve-vector-container,
@@ -534,7 +536,7 @@
     top: -2.75rem;
   }
 
-  .curve-vector-container > svg {
+  .curve-vector-container>svg {
     min-width: 48.75rem;
     transform: translateX(-38%);
   }
@@ -601,6 +603,7 @@
 
 /* Small phones: 480px and below */
 @media (max-width: 480px) {
+
   .middle-header-1,
   .middle-header-2 {
     font-size: clamp(1.625rem, 7.5vw, 2.25rem);
@@ -937,19 +940,13 @@
 
 @media (max-width: 1439px) {
   .main-container {
-    --hero-gradient-height: clamp(
-      900px,
-      calc(900px + (1440px - 100vw) * 0.42),
-      1180px
-    );
-    --blur-orange-top: calc(
-      var(--hero-gradient-height) - clamp(170px, 16vw, 220px)
-    );
-    --blur-orange-height: clamp(
-      400px,
-      calc(400px + (1440px - 100vw) * 0.08),
-      460px
-    );
+    --hero-gradient-height: clamp(900px,
+        calc(900px + (1440px - 100vw) * 0.42),
+        1180px);
+    --blur-orange-top: calc(var(--hero-gradient-height) - clamp(170px, 16vw, 220px));
+    --blur-orange-height: clamp(400px,
+        calc(400px + (1440px - 100vw) * 0.08),
+        460px);
     --section-blur-width: clamp(1100px, 170vw, 2200px);
   }
 
@@ -1739,7 +1736,7 @@
     line-height: 116%;
     letter-spacing: -0.03em;
   }
-  
+
   .language-option {
     font-size: 16px;
   }
@@ -2133,7 +2130,7 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 350px) {
+@media (max-width: 340px) {
   .hero-title {
     font-size: 2.6rem;
   }
@@ -2151,8 +2148,15 @@
   }
 
   .curve-text-container {
-    left: 3%;
-    right: 3%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .curve-image-container {
+    left: 25%;
+    width: 10.875rem;
+    transform: rotate(-15deg);
+    top: 10%;
   }
 
   .curve-media {
@@ -2231,5 +2235,166 @@
   .text-2 {
     right: 0%;
     top: 252%;
+  }
+
+  .what-we-help-container-upper-text {
+    width: clamp(150px, 90vw, 338px);
+    left: 5%;
+    right: 5%;
+    top: 26%;
+  }
+
+  .what-we-help-bottom-container {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    top: 12rem;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    color: #23252a;
+    font-family: Satoshi, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 20rem;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-image {
+    width: 310px;
+    top: -6rem;
+    left: 58%;
+    transform: translateX(-50%);
+    height: 310px;
+  }
+
+  .hero-top-text {
+    font-size: 14px;
+  }
+
+  .curve-text-container {
+    left: 5%;
+    right: 5%;
+  }
+
+  .curve-image-container {
+    left: 25%;
+    width: 10.875rem;
+    transform: rotate(-15deg);
+    top: 10%;
+  }
+
+  .curve-media {
+    left: -65%;
+  }
+
+  .central-vector-container {
+    margin-top: 24rem;
+  }
+
+  .central-vector-main-text {
+    font-size: 30px;
+  }
+
+  .central-vector-main-span-text {
+    font-size: 30px;
+  }
+
+  .our-technologies-item {
+    padding: 12px 24px;
+    font-size: 22px;
+  }
+
+  .web-mobile {
+    left: -4%;
+    top: 43.2%;
+  }
+
+  .ai {
+    left: 31%;
+    top: 57.3%;
+  }
+
+  .backend {
+    left: 54.5%;
+    top: 64.9%;
+  }
+
+  .header-title {
+    font-size: 35px;
+  }
+
+  .header-title2 {
+    font-size: 35px;
+  }
+
+  .profile-info-container {
+    padding-left: 22px;
+  }
+
+  .profile-card-img-wrap {
+    width: 85%;
+  }
+
+  .mission-title {
+    font-size: 20px;
+  }
+
+  .profile-role {
+    font-size: 12px;
+  }
+
+  .about-text-container p {
+    font-size: 20px;
+  }
+
+  .profiles-row {
+    gap: 6rem;
+  }
+
+  .text-1 {
+    left: 0%;
+    top: 200%;
+  }
+
+  .text-2 {
+    right: 0%;
+    top: 252%;
+  }
+
+  .what-we-help-container-upper-text {
+    width: clamp(150px, 90vw, 338px);
+    left: 5%;
+    right: 5%;
+    top: 26%;
+  }
+
+  .what-we-help-bottom-container {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    top: 12rem;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    color: #23252a;
+    font-family: Satoshi, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 20rem;
   }
 }
