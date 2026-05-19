@@ -10,21 +10,14 @@ const translations = {
     hero_button: "Drop us an email",
     middle_header_1: "A thoughtful digital partner",
     middle_header_2: "for growing businesses",
-    curve_text_1:
-      "Many businesses know something in their operations needs to improve, but the way forward is often unclear. Tools multiply, processes become inefficient, and technology starts to feel heavier instead of more helpful.",
-    curve_text_2:
-      '<span class="curve-company-name">Tech Philosophy</span> was created to change that. We design and implement <span class="curve-highlight">practical digital solutions</span> that bring more clarity, reduce repetitive tasks, and give businesses more time for <span class="curve-highlight">what matters most</span>.',
-    central_vector_text_1:
-      'From answers <span class="central-vector-span-text">to action</span>',
-    central_vector_text_2:
-      'We make that <span class="central-vector-span-text">shift</span>',
-    central_vector_main_text:
-      'AI that changes how your<br /><span class="central-vector-main-span-text">business works</span>',
-    what_we_help_upper_1:
-      "AI is becoming useful for many SMEs as a knowledge tool for research and summaries, but the real value starts when it moves from answers to action — triggering workflows, updating systems, generating documents, and eliminating busywork.",
-    what_we_help_upper_2:
-      "We help businesses make that shift in a practical, compliant way, with attention to GDPR, digital sovereignty, and long-term operational fit.",
-    what_we_help_header: "What we <span>help with</span>",
+    curve_text_1: "Many businesses know something in their operations needs to improve, but the way forward is often unclear. Tools multiply, processes become inefficient, and technology starts to feel heavier instead of more helpful.",
+    curve_text_2: '<span class="curve-company-name">Tech Philosophy</span> was created to change that. We design and implement <span class="curve-highlight">practical digital solutions</span> that bring more clarity, reduce repetitive tasks, and give businesses more time for <span class="curve-highlight">what matters most</span>.',
+    central_vector_text_1: 'From answers <span class="central-vector-span-text">to action</span>',
+    central_vector_text_2: 'We make that <span class="central-vector-span-text">shift</span>',
+    central_vector_main_text: 'AI that changes how your<br /><span class="central-vector-main-span-text">business works</span>',
+    what_we_help_upper_1: "AI is becoming useful for many SMEs as a knowledge tool for research and summaries, but the real value starts when it moves from answers to action — triggering workflows, updating systems, generating documents, and eliminating busywork.",
+    what_we_help_upper_2: "We help businesses make that shift in a practical, compliant way, with attention to GDPR, digital sovereignty, and long-term operational fit.",
+    what_we_help_header: "What we <span class=\"what-we-help-header-span\">help with</span>",
     learn_about_1: "Solution strategy and digital roadmaps",
     learn_about_2: "Websites, digital products, and e-commerce",
     learn_about_3: "Practical AI solutions and automations",
@@ -51,21 +44,14 @@ const translations = {
     hero_button: "Schreiben Sie uns",
     middle_header_1: "Ein durchdachter digitaler Partner",
     middle_header_2: "für wachsende Unternehmen",
-    curve_text_1:
-      "Viele Unternehmen wissen, dass ihre operativen Prozesse optimiert werden müssen, doch der richtige Weg dorthin ist oft unklar. Tools nehmen überhand, Prozesse werden ineffizient und Technologie fühlt sich oft belastender an, statt eine echte Hilfe zu sein.",
-    curve_text_2:
-      '<span class="curve-company-name">Tech Philosophy</span> wurde gegründet, um dies zu ändern. Wir konzipieren und implementieren <span class="curve-highlight">praxisorientierte digitale Lösungen</span>, die für mehr Klarheit sorgen, repetitive Aufgaben reduzieren und Unternehmen wieder mehr Zeit für <span class="curve-highlight">das Wesentliche</span> verschaffen.',
-    central_vector_text_1:
-      'Von der Antwort <span class="central-vector-span-text">zur Umsetzung</span>',
-    central_vector_text_2:
-      'Wir gestalten <span class="central-vector-span-text">diesen Wandel</span>',
-    central_vector_main_text:
-      'KI, die Ihren<br /><span class="central-vector-main-span-text">Geschäftsalltag verändert</span>',
-    what_we_help_upper_1:
-      "Für viele kleine und mittelständische Unternehmen ist KI bereits als Wissens-Tool für Recherchen und Zusammenfassungen nützlich. Der wahre Mehrwert entsteht jedoch erst, wenn KI vom reinen Wissensmanagement zum Handeln übergeht: durch automatisierte Workflows, Systemaktualisierungen, Dokumentenerstellung und die Eliminierung zeitraubender Routineaufgaben.",
-    what_we_help_upper_2:
-      "Wir begleiten Unternehmen bei diesem Wandel – praxisnah, rechtskonform unter Berücksichtigung der DSGVO, mit Fokus auf digitale Souveränität und langfristige operative Stabilität.",
-    what_we_help_header: "Unsere <span>Schwerpunkte</span>",
+    curve_text_1: "Viele Unternehmen wissen, dass ihre operativen Prozesse optimiert werden müssen, doch der richtige Weg dorthin ist oft unklar. Tools nehmen überhand, Prozesse werden ineffizient und Technologie fühlt sich oft belastender an, statt eine echte Hilfe zu sein.",
+    curve_text_2: '<span class="curve-company-name">Tech Philosophy</span> wurde gegründet, um dies zu ändern. Wir konzipieren und implementieren <span class="curve-highlight">praxisorientierte digitale Lösungen</span>, die für mehr Klarheit sorgen, repetitive Aufgaben reduzieren und Unternehmen wieder mehr Zeit für <span class="curve-highlight">das Wesentliche</span> verschaffen.',
+    central_vector_text_1: 'Von der Antwort <span class="central-vector-span-text">zur Umsetzung</span>',
+    central_vector_text_2: 'Wir gestalten <span class="central-vector-span-text">diesen Wandel</span>',
+    central_vector_main_text: 'KI, die Ihren<br /><span class="central-vector-main-span-text">Geschäftsalltag verändert</span>',
+    what_we_help_upper_1: "Für viele kleine und mittelständische Unternehmen ist KI bereits als Wissens-Tool für Recherchen und Zusammenfassungen nützlich. Der wahre Mehrwert entsteht jedoch erst, wenn KI vom reinen Wissensmanagement zum Handeln übergeht: durch automatisierte Workflows, Systemaktualisierungen, Dokumentenerstellung und die Eliminierung zeitraubender Routineaufgaben.",
+    what_we_help_upper_2: "Wir begleiten Unternehmen bei diesem Wandel – praxisnah, rechtskonform unter Berücksichtigung der DSGVO, mit Fokus auf digitale Souveränität und langfristige operative Stabilität.",
+    what_we_help_header: "Unsere <span class=\"what-we-help-header-span\">Schwerpunkte</span>",
     learn_about_1: "Strategische Beratung und digitale Roadmaps",
     learn_about_2: "Websites, digitale Produkte und E-Commerce-Lösungen",
     learn_about_3: "Praxisorientierte KI-Lösungen und Automatisierungen",
@@ -105,18 +91,22 @@ function applyTranslations(lang) {
   document.documentElement.lang = lang;
   localStorage.setItem("lang", lang);
 
-  const middleHeader1 = document.querySelector(".middle-header-1");
-  const middleHeader2 = document.querySelector(".middle-header-2");
-  const projectHeader1 = document.querySelector(".title-1");
-  const projectHeader2 = document.querySelector(".title-2");
-  const heroTitle2 = document.querySelector(".hero-title-2");
-  const curveText = document.querySelector(".curve-text");
-  const curveTextTwo = document.querySelector(".curve-text-two");
-  const centralVectorText1 = document.querySelector(".text-1");
-  const centralVectorText2 = document.querySelector(".text-2");
-  const centralVectorSpanText = document.querySelectorAll(
-    ".central-vector-span-text",
-  );
+  const middleHeader1 = document.querySelector('.middle-header-1');
+  const middleHeader2 = document.querySelector('.middle-header-2');
+  const projectHeader1 = document.querySelector('.title-1');
+  const projectHeader2 = document.querySelector('.title-2');
+  const heroTitle2 = document.querySelector('.hero-title-2');
+  const curveText = document.querySelector('.curve-text');
+  const curveTextTwo = document.querySelector('.curve-text-two');
+  const centralVectorText1 = document.querySelector('.text-1');
+  const centralVectorText2 = document.querySelector('.text-2');
+  const centralVectorSpanText = document.querySelectorAll('.central-vector-span-text');
+  const whatWeHelpUpper = document.querySelectorAll('.what_we_help_upper');
+  const whatWeHelpContainerUpperText = document.querySelector('.what-we-help-container-upper-text');
+  const whatWeHelpHeader = document.querySelector('.what-we-help-header');
+  const whatWeHelpHeaderSpan = document.querySelector('.what-we-help-header-span');
+  const aboutHeaderTitle = document.querySelector('.header-title');
+  const aboutHeaderTitle2 = document.querySelector('.header-title2');
 
   if (lang === "de") {
     middleHeader1.style.fontSize = "clamp(22px, 6vw, 100px)";
@@ -126,8 +116,10 @@ function applyTranslations(lang) {
     // heroTitle2.style.fontSize = 'clamp(32px, 4.2vw, 80px)';
 
     if (window.innerWidth <= 480) {
-      middleHeader1.style.fontSize = "clamp(1.625rem, 12vw, 5rem)";
-      middleHeader2.style.fontSize = "clamp(1.625rem, 12vw, 5rem)";
+      middleHeader1.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
+      middleHeader2.style.fontSize = 'clamp(1.625rem, 12vw, 5rem)';
+
+      heroTitle2.style.fontSize = 'clamp(2.4rem, 6vw, 3rem)';
 
       heroTitle2.style.fontSize = "clamp(2.4rem, 6vw, 3rem)";
 
@@ -139,6 +131,18 @@ function applyTranslations(lang) {
       centralVectorSpanText.forEach((el) => {
         el.style.fontSize = "clamp(14px, 5vw, 26px)";
       });
+      whatWeHelpUpper.forEach(el => {
+        el.style.fontSize = 'clamp(14px, 4vw, 26px)';
+      });
+      whatWeHelpContainerUpperText.style.top = '20%';
+      
+      whatWeHelpHeader.style.fontSize = 'clamp(1.875rem, 6vw, 2.3rem)';
+      whatWeHelpHeaderSpan.style.fontSize = 'clamp(1.875rem, 6vw, 2.3rem)';
+
+      aboutHeaderTitle.style.fontSize = 'clamp(1.625rem, 5.5vw, 2rem)';
+      aboutHeaderTitle2.style.fontSize = 'clamp(1.75rem, 6vw, 2.2rem)';
+      aboutHeaderTitle2.style.marginTop = '0%';
+      aboutHeaderTitle2.style.textAlign = 'left';
     }
   }
 
