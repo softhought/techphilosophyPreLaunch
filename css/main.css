@@ -233,7 +233,7 @@ body {
   margin-bottom: 0;
   opacity: 0;
   translate: -48px 0;
-  animation: heroTextRevealLeft 0.6s ease-out 2.35s forwards;
+  animation: heroImageReveal 0.6s ease-out 2.35s forwards;
 }
 
 .hero-button {
@@ -262,7 +262,7 @@ body {
   text-decoration: none;
   opacity: 0;
   translate: -48px 0;
-  animation: heroTextRevealLeft 0.6s ease-out 2.55s forwards;
+  animation: heroImageReveal 0.6s ease-out 2.55s forwards;
 }
 
 .hero-orbit-wrapper {
